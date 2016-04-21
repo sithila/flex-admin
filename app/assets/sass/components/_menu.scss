@@ -1,0 +1,219 @@
+.blue-vertical-menu {
+	@include vertical-menu(#3D98E3,#ffffff,5px,1em 2em);
+    .menu-link {
+        background: rgba(0, 0, 0, 0) none no-repeat scroll 0 0;
+        color: #fff;
+        display: inline-block;
+        font-size: 12px;
+        font-weight: 400;
+        min-height: 30px;
+        letter-spacing: normal;
+        line-height: 2.75;
+        opacity: 1;
+        outline-offset: -7px;
+        padding: 0 5px;
+        position: relative;
+        text-decoration: none;
+        transition: opacity 0.2s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+        white-space: nowrap;
+        z-index: 1;
+    }
+    &.fade-in{
+       @include fadein(5s); 
+    }
+}
+
+.white-horizontal-menu {
+	@include horizontal-menu(#ffffff,#000000,5px,1em 2em);
+    
+    .menu-link {
+        display: inline-block;
+        font-size: 12px;
+        font-weight: 400;
+        min-height: 30px;
+        letter-spacing: normal;
+        line-height: 14px;
+        opacity: 1;
+        outline-offset: -7px;
+        padding: 10px 10px;
+        position: relative;
+        text-decoration: none;
+        transition: opacity 0.2s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+        white-space: nowrap;
+        z-index: 1;
+        
+    }
+    &.fade-in{
+       @include fadein(5s); 
+    }
+}
+
+.left-vertical-menu {
+	@include vertical-menu(#ffffff,#000000,5px,1em 2em);
+    
+    .menu-link {
+        color: $common-txt-color;
+        display: block;
+        font-size: 13px;
+        font-weight: 400;
+        min-height: 30px;
+        letter-spacing: normal;
+        line-height: 14px;
+        opacity: 1;
+        outline-offset: -7px;
+        padding: 10px 10px;
+        position: relative;
+        text-decoration: none;
+        transition: opacity 0.2s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+        white-space: nowrap;
+        z-index: 1;
+        text-align: left;
+        border-left: 4px solid $pure-white;
+        .case-number{
+                    width: 30px;
+                    height: 15px;
+                    display: inline-block;
+                    position:absolute;
+                    right: 10px;
+                    font-size: 12px;
+                    color: $active-red;
+                }
+        &.active{
+            border-left: 4px solid $active-blue;
+            color: $active-blue;
+            
+        }
+    }
+    &.fade-in{
+       @include fadein(5s); 
+    }
+}
+
+.transparent-vertical-menu {
+	@include vertical-menu(#ffffff,#000000,5px,1em 2em);
+    .menu-link {
+        color: #616870;
+        display: inline-block;
+        font-size: 12px;
+        font-weight: 400;
+        letter-spacing: normal;
+        line-height: 2.75;
+        opacity: 1;
+        outline-offset: -7px;
+        padding: 0 10px;
+        position: relative;
+        text-decoration: none;
+        transition: opacity 0.2s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+        white-space: nowrap;
+        z-index: 1;
+    }
+    &.fade-in{
+       @include fadein(5s); 
+    }
+}
+
+.horizontal-menu {
+	@include horizontal-menu($pure-white,$link-blue,5px,1em 2em);
+    border:1px solid $light-white;
+    border-width: 1px 0 1px 0;
+    margin-bottom: 1em;
+    
+    a {
+        color:$link-blue;
+        display: inline-block;
+        font-size: 12px;
+        font-weight: 400;
+        min-height: 30px;
+        letter-spacing: normal;
+        line-height: 14px;
+        opacity: 1;
+        outline-offset: -7px;
+        padding: 10px 10px;
+        position: relative;
+        text-decoration: none;
+        transition: opacity 0.2s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+        white-space: nowrap;
+        z-index: 1;
+        
+    }
+    &.fade-in{
+       @include fadein(5s); 
+    }
+}
+
+.horizontal-icon-menu {
+	@include horizontal-menu($pure-white,$link-blue,5px,1em 2em);
+    border:1px solid $light-white;
+    border-width: 1px 0 1px 0;
+    margin-bottom: 1em;
+    
+    a {
+        color:$link-blue;
+        display: inline-block;
+        font-size: 12px;
+        font-weight: 400;
+        min-height: 30px;
+        letter-spacing: normal;
+        line-height: 14px;
+        opacity: 1;
+        outline-offset: -7px;
+        padding: 10px 10px;
+        position: relative;
+        text-decoration: none;
+        transition: opacity 0.2s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+        white-space: nowrap;
+        z-index: 1;
+        .icon{
+            display: inline-block;
+            font-family: FontAwesome;
+            font-style: normal;
+            font-weight: normal;
+            line-height: 1;
+            margin-right: 0.5em;
+            
+        }
+        
+    }
+    &.fade-in{
+       @include fadein(5s); 
+    }
+}
+
+.vertical-menu {
+	@include vertical-menu($pure-white,$link-blue,5px,1em 2em);
+    
+    
+    a {
+        color:$link-blue;
+        display: block;
+        font-size: 12px;
+        font-weight: 400;
+        min-height: 30px;
+        letter-spacing: normal;
+        line-height: 14px;
+        opacity: 1;
+        outline-offset: -7px;
+        padding: 10px 10px;
+        position: relative;
+        text-decoration: none;
+        transition: opacity 0.2s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+        white-space: nowrap;
+        z-index: 1;
+        border-bottom: 1px solid $light-white;
+        .icon{
+            display: inline-block;
+            font-family: FontAwesome;
+            font-style: normal;
+            font-weight: normal;
+            line-height: 1;
+            margin-right: 0.5em;
+            
+        }
+        
+    }
+    &.fade-in{
+       @include fadein(5s); 
+    }
+}
+
+

@@ -1,0 +1,19 @@
+@mixin horizontal-menu($bg,$color,$br,$padding) {
+    background:$bg; 
+    color:$color;
+	padding:0px; 
+    margin-bottom: 0px;
+    @include clearfix;
+	li{
+        display: inline-block;
+        a{
+            padding: $padding;
+            color:$color;
+            text-decoration: none;
+            &:hover{
+               color:$color; 
+            }
+        }
+        
+    }
+}

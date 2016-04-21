@@ -1,0 +1,80 @@
+// sidebar
+
+.widget-box{
+    background: $pure-white;
+    border-radius: 0px;
+    //box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
+    @include box-shadow(0, 1px, 2px, rgba(0, 0, 0, 0.07));
+    //transition: all 0.2s linear 0s;
+    //@include transition(all, 2s, linear);
+    border-radius: 0px;
+    //opacity: 0;
+   // @include transform(scale(0.5,0.5));
+   // @include transition(opacity, 2s, ease-in);
+    text-align: left;
+  
+    .headding{
+        background: rgba(255, 255, 255, 1);
+        border-bottom: 1px solid $light-white;
+        border-radius: 0 ;
+        padding: 10px 15px;
+        color: $dark-ash-1;
+        margin-bottom: 0px !important;
+        }
+    .body{
+        padding: 15px;
+        background: $pure-white;
+        border-radius: 0;
+    }
+    form {
+        .form-control{
+            border-radius: 0px;
+            box-shadow: none;
+            border-color: $light-ash2;
+        }
+        label{
+            font-weight: normal;
+            color: $dark-ash-1;
+            padding-right: 0px;
+        }
+        label{
+            &.error{
+                display: none;
+                font-size: 12px;
+                color: $brand-red;
+            }
+        }
+        .btn {
+            a {
+                i{
+                    color: $dark-ash-1;
+                }
+            }
+        }
+        .form-group{
+            &.success{
+                input{
+                    border-color: $light-green;
+                }
+            }
+            &.error{
+                input{
+                    border-color:$brand-red;
+                }
+            }
+        }
+    }
+    &:hover{
+	   //box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.19);
+      // @include box-shadow(0, 10px, 20px,0 rgba(0, 0, 0, 0.19)); 
+    }
+}
+
+.widget-box.animation-element.in-view {
+    @include opacity(1);
+    @include transform(scale(1,1));
+}
+
+.sub-widget{
+    padding: 0px 10px;  
+}

@@ -1,0 +1,66 @@
+// sidebar
+.shadow-wrapper {
+    position: relative;
+    z-index: 1;
+}
+.shadow-box{
+    border-color: $link-blue $ash3 $ash3;
+    border-style: solid;
+    border-width: 2px 1px 1px;
+    background: $pure-white;
+    margin-bottom: 30px;
+    padding: 20px;
+    position: relative;
+    &.box-shadow{
+        &:before,&:after{
+            background: $shadow-box ;
+            bottom: 15px;
+            content: "";
+            max-width: 300px;
+            position: absolute;
+            top: 80%;
+            width: 50%;
+            z-index: -1;
+            
+        }
+        
+        
+    }
+    &.effect-1{
+        &:before,{
+                -moz-box-shadow:0 15px 10px $shadow-box;
+                box-shadow: 0 15px 10px $shadow-box;
+                transform: rotate(-3deg);
+                left: 5px;
+        }
+        &:after{
+            -moz-box-shadow:0 15px 10px $shadow-box;
+                box-shadow: 0 15px 10px $shadow-box;
+                transform: rotate(3deg);
+                right: 5px;
+        }
+    }
+    &.effect-2{
+        &:before,{
+            -moz-box-shadow:0 15px 10px $shadow-box;
+                box-shadow: 0 15px 10px $shadow-box;
+                transform: rotate(-3deg);
+                left: 5px;
+        }
+        
+    }
+    &.effect-3{
+        &:after{
+            -moz-box-shadow:0 15px 10px $shadow-box;
+                box-shadow: 0 15px 10px $shadow-box;
+                transform: rotate(3deg);
+                right: 5px;
+        }
+        
+    }
+    &.effect-4{
+        -moz-box-shadow:0 15px 10px $shadow-box;
+        box-shadow: 0 10px 6px -6px $shadow-box;
+        
+    }
+}

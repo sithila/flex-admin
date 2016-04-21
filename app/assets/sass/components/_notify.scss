@@ -1,0 +1,17 @@
+// table
+
+.urgency {
+    height: 15px;
+    width: 15px;
+    display: inline-block;
+    @include border-radius(10px);
+    vertical-align: middle;
+    margin-top: -4px;
+    margin-right: 10px;
+    &.top{
+        background-color: $notify-red; 
+    }
+    &.less{
+        background-color: $notify-green; 
+    }
+}

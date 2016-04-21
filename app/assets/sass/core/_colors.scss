@@ -1,0 +1,21 @@
+// colors
+
+.bg-blue{
+    @include background-color($bg-blue);   
+}
+.bg-green{
+    @include background-color($bg-green);   
+}
+.bg-red{
+    @include background-color($bg-red);   
+}
+.bg-yellow{
+    @include background-color($bg-yellow);   
+}
+.bg-black{
+    @include background-color($bg-black);   
+}
+
+
+
+

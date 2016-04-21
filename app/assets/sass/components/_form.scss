@@ -1,0 +1,522 @@
+// form
+
+form {
+    color: $text-ash-border;
+    margin: 0;
+    outline: none;
+    
+    .inline-group {
+        margin: 0 -30px -4px 0;
+        .radio, .checkbox {
+            float: left;
+            margin-right: 30px;
+        }
+    }
+    
+    &.bordered {
+        border: 1px solid $ash3;
+    }
+    header {
+        background: $pure-white;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        display: block;
+        font-size: 20px;
+        font-weight: 400;
+        padding: 8px 30px;
+    }
+    fieldset {
+        border: none;
+        display: block;
+        padding: 25px 30px 5px;
+    }
+    section {
+        margin-bottom: 20px;
+    }
+
+    .label {
+        display: block;
+        font-weight: 400;
+        line-height: 19px;
+        margin-bottom: 6px;
+        padding: 0.2em 0 0.3em;
+        font-size: 100%;
+        text-align: left;
+        white-space: normal;
+    }
+    .input, .select, .textarea, .radio, .checkbox, .toggle, .button {
+        display: block;
+        position: relative;
+    }
+    .input input, .select select, .textarea textarea{
+        border-color: #bbb;
+        border-width: 1px;
+        color: #404040;
+        font-size: 14px;
+        border-radius: 0;
+        border-style: solid;
+        box-sizing: border-box;
+        color: #404040;
+        display: block;
+        outline:none;
+        padding: 6px 10px;
+        width: 100%;
+        -moz-appearance: none;
+        background: #fff;
+        transition: border-color 0.3s ease 0s;
+        font-weight: normal;
+    }
+    .input {
+        input {
+            height: 34px;
+            padding: 6px 12px;
+        }
+        i.icon-append {
+            position: absolute;
+            text-align: center;
+            color: #b3b3b3;
+            min-width: 34px;
+            padding: 0 3px;
+            right: 1px;
+            background: inherit;
+            font-size: 18px;
+            height: 32px;
+            line-height: 33px;
+            top: 1px;
+            border-left: 1px solid #bbbbbb;
+        }
+        i.icon-prepend {
+            position: absolute;
+            text-align: center;
+            color: #b3b3b3;
+            min-width: 34px;
+            padding: 0 3px;
+            left: 1px;
+            background: inherit;
+            font-size: 18px;
+            height: 32px;
+            line-height: 33px;
+            top: 1px;
+            border-right: 1px solid #bbbbbb;
+        }
+    }
+    .input .icon-prepend + input, .textarea .icon-prepend + textarea {
+        padding-left: 46px;
+    }
+    .textarea {
+        textarea{
+            height: auto;
+            resize: none;
+        }
+        &.textarea-resizable {
+            textarea{
+              resize: vertical;  
+            }
+        }
+    }
+    .radio, .checkbox {
+        font-weight: 400;
+        color: #404040;
+        cursor: pointer;
+        font-size: 15px;
+        line-height: 30px;
+        margin-bottom: 4px;
+        padding-left: 27px;
+        input{
+            left: -9999px;
+            position: absolute;
+        }
+        input[type="checkbox"], input[type="checkbox"], input[type="radio"], input[type="radio"] {
+            margin-left: -20px;
+            position: absolute;
+        }
+        i {
+            border-width: 1px;
+            border-color: #999;
+            height: 17px;
+            width: 17px;
+            background: #fff ;
+            border-style: solid;
+            display: block;
+            outline: medium none;
+            position: absolute;
+            left: 5px;
+            top: 5px;
+            &.rounded-x {
+                border-radius: 50% !important;
+            }
+        }
+        
+        input + i::after {
+            border-radius: 50%;
+            content: "";
+            height: 5px;
+            left: 5px;
+            top: 5px;
+            width: 5px;
+            background-color: #2da5da;
+            background-color: #999;
+        }
+        input:checked + i::after, input:checked + i::after {
+            opacity: 1;
+        }
+        input + i::after, input + i::after {
+            opacity: 0;
+            position: absolute;
+            transition: opacity 0.1s ease 0s;
+        }
+        
+    }
+    .checkbox input + i::after {
+        background-color: #fff;
+        color: #999;
+        content: "";
+        font-family: "icomoon" !important;
+        font-size: 10px;
+        font-weight: normal;
+        height: 5px;
+        left: 1px;
+        text-align: center;
+        top: -7px;
+        width: 5px;
+    }
+    .toggle {
+        color: #404040;
+        font-weight: normal;
+        cursor: pointer;
+        font-size: 15px;
+        line-height: 27px;
+        margin-bottom: 4px;
+        padding-right: 61px;
+        input {
+            left: -9999px;
+            position: absolute;
+        }
+        input:checked + i::before {
+            right: 36px;
+        }
+        i::before {
+            right: 6px;
+            top: 5px;
+        }
+        i::before {
+            background-color: #2da5da;
+        }
+        
+        i::before {
+            border-radius: 50%;
+            content: "";
+            display: block;
+            height: 9px;
+            opacity: 1;
+            position: absolute;
+            right: 4px;
+            top: 5px;
+            transition: right 0.2s ease 0s;
+            width: 9px;
+            z-index: 1;
+        }
+
+         input:checked + i::after {
+            content: "ON";
+            text-align: right;
+        }
+       
+        i::after {
+            color: #5f5f5f;
+            content: "OFF";
+            font-size: 9px;
+            font-style: normal;
+            font-weight: 700;
+            left: 8px;
+            line-height: 13px;
+            position: absolute;
+            right: 8px;
+            text-align: left;
+            top: 3px;
+        } 
+        i {
+            border: 1px solid #ddd;
+            height: 21px;
+            width: 54px;
+            background: #fff;
+            border-radius: 12px;
+            border-style: solid;
+            content: "";
+            display: block;
+            position: absolute;
+            right: 0;
+            top: 4px;
+        } 
+    }
+    .rating {
+            color: #404040;
+            font-size: 15px;
+            line-height: 27px;
+            margin-bottom: 4px;
+            input {
+                left: -9999px;
+                position: absolute;
+            }
+        label {
+                color: #ccc;
+                transition: color 0.3s ease 0s;
+                cursor: pointer;
+                display: block;
+                float: right;
+                font-size: 17px;
+                height: 17px;
+                line-height: 17px;
+                margin-top: 5px;
+                padding: 0 2px;
+            &:hover{
+                color: $button-green;
+            }
+            }
+        }
+    footer {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 15px 30px 25px;
+}
+        
+    .input-file .button {
+        height: 32px;
+        right: 1px;
+        top: 1px;
+        float: none;
+        font-size: 13px;
+        line-height: 31px;
+        margin: 0;
+        padding: 0 20px;
+        position: absolute;
+        right: 1px;
+        top: 1px;
+        background: #72c02c ;
+        color:$pure-white;
+        font-weight: normal;
+        input {
+            cursor: pointer;
+            font-size: 30px;
+            opacity: 0;
+            padding: 0;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+    }
+    .select i {
+        background: #fff none repeat scroll 0 0;
+    height: 35px;
+    pointer-events: none;
+    position: absolute;
+    right: 2px;
+    top: 2px;
+    width: 28px;
+        height: 6px;
+        right: 13px;
+        top: 14px;
+        width: 9px;
+    }
+    .select i::after, .select i::before {
+        top: 4px;
+        border-left: 4px solid transparent;
+        border-right: 4px solid transparent;
+        content: "";
+        position: absolute;
+        right: 10px;
+    }
+    .select i::before {
+        border-bottom: 4px solid #404040;
+        top: -2px;
+    }
+
+    .select i::after {
+         border-top: 4px solid #404040;
+    bottom: 12px;
+}
+    
+    .form-group {
+        margin-bottom: 15px;
+    }
+    label {
+        display: inline-block;
+        font-weight: 700;
+        margin-bottom: 5px;
+        max-width: 100%;
+        font-size: 14px;
+    }
+    .form-control {
+        background-color: #fff;
+        background-image: none;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+        color: #555;
+        display: block;
+        font-size: 14px;
+        height: 34px;
+        line-height: 1.42857;
+        padding: 6px 12px;
+        transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+        width: 100%;
+    }
+    .btn{
+        font-size: 0.8em;
+        
+    }
+   
+}
+
+.dropdown{
+    position: relative;
+    .btn {
+        background-color: #e6e6e6;
+        border-color: #adadad;
+        color: #333;
+        -moz-user-select: none;
+        background-image: none;
+        border: 1px solid transparent;
+        border-radius: 4px;
+        cursor: pointer;
+        display: inline-block;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.42857;
+        margin-bottom: 0;
+        padding: 6px 12px;
+        text-align: center;
+        vertical-align: middle;
+        white-space: nowrap;
+        &.cleardd{
+            padding: 0px;
+            background-color: #ffffff;
+            border-color: #ffffff;
+            font-size:13px;
+            
+        }
+        .icon-dd{
+            width:10px;
+            height:10px;
+            display:inline-block;
+            
+        }
+    }
+    .dropdown-menu {
+        background-clip: padding-box;
+        background-color: #fff;
+        border: 1px solid rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.176);
+        display: none;
+        float: left;
+        font-size: 14px;
+        left: 0;
+        list-style: outside none none;
+        margin: 2px 0 0;
+        min-width: 160px;
+        padding: 5px 0;
+        position: absolute;
+        text-align: left;
+        top: 100%;
+        z-index: 1000;
+        &.left{
+            right:0;
+            left:auto;
+        }
+        &.show{
+            display: block;
+        }
+        li {
+            float: none !important;
+            
+             a {
+            clear: both;
+            color: #333;
+            display: block;
+            font-weight: 400;
+            line-height: 1.42857;
+            padding: 3px 20px;
+            white-space: nowrap;
+        }
+        }
+    }
+}
+
+
+.ui-datepicker {
+	display: none;
+	padding: 10px 12px;
+	background: rgba(255,255,255,0.9);
+	box-shadow: 0 0 10px rgba(0,0,0,.3);
+	font: 13px/1.55 'Open Sans', Helvetica, Arial, sans-serif;
+	text-align: center;
+	color: #666;
+}
+.ui-datepicker a {
+	color: #404040;
+}
+.ui-datepicker-header {
+	position: relative;
+	margin: -10px -12px 10px;
+	padding: 10px;
+	border-bottom: 1px solid rgba(0,0,0,.1);
+	font-size: 15px;
+	line-height: 27px;
+}
+.ui-datepicker-prev, 
+.ui-datepicker-next {
+	position: absolute;
+	top: 0;
+	display: block;
+	width: 47px;
+	height: 47px;
+	font-size: 15px;
+	line-height: 47px;
+	text-decoration: none;
+	cursor: pointer;
+}
+.ui-datepicker-prev {
+	left: 0;
+}
+.ui-datepicker-next {
+	right: 0;
+}
+.ui-datepicker-calendar {
+	border-collapse: collapse;
+	font-size: 13px;
+	line-height: 27px;
+}
+.ui-datepicker-calendar th {
+	color: #999;
+}
+.ui-datepicker-calendar a,
+.ui-datepicker-calendar span {
+	display: block;
+	width: 31px;
+	margin: auto;
+	text-decoration: none;
+	color: #404040;
+}
+.ui-datepicker-calendar a:hover {
+	background: rgba(0,0,0,.05);	
+}
+.ui-datepicker-calendar span {
+	color: #bfbfbf;
+}
+.ui-datepicker-today a {
+	font-weight: 700;
+}
+.ui-datepicker-calendar .ui-state-active {
+	background: rgba(0,0,0,.05);
+	cursor: default;	
+}
+.ui-datepicker-inline {
+	border: 2px solid #e5e5e5;
+	background: #fff;
+	box-shadow: none;
+}
+.ui-datepicker-inline .ui-datepicker-header {
+	line-height: 47px;
+}
+.ui-datepicker-inline .ui-datepicker-calendar {
+	width: 100%;
+}

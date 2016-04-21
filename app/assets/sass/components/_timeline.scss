@@ -1,0 +1,60 @@
+// sidebar
+.timeline{
+    list-style: outside none none;
+    padding: 0;
+    position: relative;
+    &:before{
+        background: #f3f3f3 none repeat scroll 0 0;
+        bottom: 0;
+        content: "";
+        left: 22%;
+        margin-left: -14px;
+        position: absolute;
+        top: 0;
+        width: 4px;
+    }
+    li.equal-height-columns{
+        position: relative;
+        list-style: outside none none;
+        .cbp_tmtime {
+            display: block;
+            padding-right: 80px;
+            position: absolute;
+            width: 25%;
+            span {
+                    display: block;
+                    position: relative;
+                    text-align: right;
+                    top: 9px;
+                }
+            span:first-child {
+                color: #999;
+                font-size: 14px;
+                line-height: 0.9;
+            }
+            span:last-child {
+                color: #585f69;
+                font-size: 20px;
+                font-weight: normal;
+            }
+        }
+        .cbp_tmicon {
+            background: #72c02c none repeat scroll 0 0;
+            box-shadow: 0 0 0 4px #f3f3f3;
+            height: 10px;
+            left: 22%;
+            margin: 0 0 0 -17px;
+            position: absolute;
+            top: 22px;
+            width: 10px;
+            border-radius: 50% !important;
+        }
+        .cbp_tmlabel {
+            clear: both;
+            line-height: 1.4;
+            margin: 0 0 40px 25%;
+            position: relative;
+        }
+    }
+ 
+}

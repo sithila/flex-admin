@@ -1,0 +1,369 @@
+        <div class="row">
+            <div class="column col-70">
+               <form class="bordered" action="#">
+                    <header>General Forms</header>
+
+                    <fieldset>
+                        <section>
+                            <label class="label">Text input</label>
+                            <label class="input">
+                                <input type="text" placeholder="Address">
+                            </label>
+                        </section>
+                        <section>
+                            <label class="label">Text input</label>
+                                <label class="input">
+                                    <i class="icon-append icon-lock-rounded-open4"></i>
+                                    <input type="text" id="name" name="name" >
+                                </label>
+                        </section>
+                        <section>
+                            <label class="label">Text input</label>
+                                <label class="input">
+                                    <i class="icon-prepend icon-lock-rounded-open4"></i>
+                                    <input type="text" id="name" name="name">
+                                </label>
+                        </section>
+                        <section>
+                                        <label class="label">Select single date</label>
+                                        <label class="input">
+                                            <i class="icon-append icon-calendar4"></i>
+                                            <input type="text" id="date" >
+                                        </label>
+                        </section>
+                        <section>
+                            <label class="label">File input</label>
+                            <label class="input input-file" for="file">
+                                <div class="button"><input type="file" onchange="this.parentNode.nextSibling.value = this.value" id="file">Browse</div><input type="text" readonly="">
+                            </label>
+                        </section>
+
+                        <section>
+                            <label class="label">Input with autocomlete</label>
+                            <label class="input">
+                                <input type="text" list="list">
+                                <datalist id="list">
+                                    <option value="Alexandra"></option>
+                                    <option value="Alice"></option>
+                                    <option value="Anastasia"></option>
+                                    <option value="Avelina"></option>
+                                    <option value="Basilia"></option>
+                                    <option value="Beatrice"></option>
+                                    <option value="Cassandra"></option>
+                                    <option value="Cecil"></option>
+                                    <option value="Clemencia"></option>
+                                    <option value="Desiderata"></option>
+                                    <option value="Dionisia"></option>
+                                    <option value="Edith"></option>
+                                    <option value="Eleanora"></option>
+                                    <option value="Elizabeth"></option>
+                                    <option value="Emma"></option>
+                                    <option value="Felicia"></option>
+                                    <option value="Florence"></option>
+                                    <option value="Galiana"></option>
+                                    <option value="Grecia"></option>
+                                    <option value="Helen"></option>
+                                    <option value="Helewisa"></option>
+                                    <option value="Idonea"></option>
+                                    <option value="Isabel"></option>
+                                    <option value="Joan"></option>
+                                    <option value="Juliana"></option>
+                                    <option value="Karla"></option>
+                                    <option value="Karyn"></option>
+                                    <option value="Kate"></option>
+                                    <option value="Lakisha"></option>
+                                    <option value="Lana"></option>
+                                    <option value="Laura"></option>
+                                    <option value="Leona"></option>
+                                    <option value="Mandy"></option>
+                                    <option value="Margaret"></option>
+                                    <option value="Maria"></option>
+                                    <option value="Nanacy"></option>
+                                    <option value="Nicole"></option>
+                                    <option value="Olga"></option>
+                                    <option value="Pamela"></option>
+                                    <option value="Patricia"></option>
+                                    <option value="Qiana"></option>
+                                    <option value="Rachel"></option>
+                                    <option value="Ramona"></option>
+                                    <option value="Samantha"></option>
+                                    <option value="Sandra"></option>
+                                    <option value="Tanya"></option>
+                                    <option value="Teresa"></option>
+                                    <option value="Ursula"></option>
+                                    <option value="Valerie"></option>
+                                    <option value="Veronica"></option>
+                                    <option value="Wilma"></option>
+                                    <option value="Yasmin"></option>
+                                    <option value="Zelma"></option>
+                                </datalist>
+                            </label>
+                            
+                        </section>
+                    </fieldset>
+
+                    <fieldset>
+                        <section>
+                            <label class="label">Select</label>
+                            <label class="select">
+                                <select>
+                                    <option value="0">Choose name</option>
+                                    <option value="1">Alexandra</option>
+                                    <option value="2">Alice</option>
+                                    <option value="3">Anastasia</option>
+                                    <option value="4">Avelina</option>
+                                </select>
+                                <i></i>
+                            </label>
+                        </section>
+
+                        <section>
+                            <label class="label">Multiple select</label>
+                            <label class="select select-multiple">
+                                <select multiple="">
+                                    <option value="1">Alexandra</option>
+                                    <option value="2">Alice</option>
+                                    <option value="3">Anastasia</option>
+                                    <option value="4">Avelina</option>
+                                    <option value="5">Basilia</option>
+                                    <option value="6">Beatrice</option>
+                                    <option value="7">Cassandra</option>
+                                    <option value="8">Clemencia</option>
+                                    <option value="9">Desiderata</option>
+                                </select>
+                            </label>
+                           
+                        </section>
+                    </fieldset>
+
+                    <fieldset>
+                        <section>
+                            <label class="label">Textarea</label>
+                            <label class="textarea">
+                                <textarea rows="3"></textarea>
+                            </label>
+                           
+                        </section>
+
+                        <section>
+                            <label class="label">Textarea resizable</label>
+                            <label class="textarea textarea-resizable">
+                                <textarea rows="3"></textarea>
+                            </label>
+                        </section>
+
+                        <section>
+                            <label class="label">Textarea expandable</label>
+                            <label class="textarea textarea-expandable">
+                                <textarea rows="3"></textarea>
+                            </label>
+                            <div class="note"><strong>Note:</strong> expands on focus.</div>
+                        </section>
+                    </fieldset>
+
+                    <fieldset>
+                        <section>
+                            <label class="label">Columned radios</label>
+
+                            <div class="row">
+                                <div class="column">
+                                    <label class="radio"><input type="radio" checked="" name="radio"><i class="rounded-x"></i>Alexandra</label>
+                                    <label class="radio"><input type="radio" name="radio"><i class="rounded-x"></i>Alice</label>
+                                    <label class="radio"><input type="radio" name="radio"><i class="rounded-x"></i>Anastasia</label>
+                                </div>
+                                <div class="column">
+                                    <label class="radio"><input type="radio" name="radio"><i class="rounded-x"></i>Avelina</label>
+                                    <label class="radio"><input type="radio" name="radio"><i class="rounded-x"></i>Basilia</label>
+                                    <label class="radio"><input type="radio" name="radio"><i class="rounded-x"></i>Beatrice</label>
+                                </div>
+                                <div class="column">
+                                    <label class="radio"><input type="radio" name="radio"><i class="rounded-x"></i>Cassandra</label>
+                                    <label class="radio"><input type="radio" name="radio"><i class="rounded-x"></i>Clemencia</label>
+                                    <label class="radio"><input type="radio" name="radio"><i class="rounded-x"></i>Desiderata</label>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section>
+                            <label class="label">Inline radios</label>
+                            <div class="inline-group">
+                                <label class="radio"><input type="radio" checked="" name="radio-inline"><i class="rounded-x"></i>Alexandra</label>
+                                <label class="radio"><input type="radio" name="radio-inline"><i class="rounded-x"></i>Alice</label>
+                                <label class="radio"><input type="radio" name="radio-inline"><i class="rounded-x"></i>Anastasia</label>
+                                <label class="radio"><input type="radio" name="radio-inline"><i class="rounded-x"></i>Avelina</label>
+                                <label class="radio"><input type="radio" name="radio-inline"><i class="rounded-x"></i>Beatrice</label>
+                            </div>
+                        </section>
+                    </fieldset>
+
+                    <fieldset>
+                        <section>
+                            <label class="label">Columned checkboxes</label>
+                            <div class="row">
+                                <div class="column">
+                                    <label class="checkbox"><input type="checkbox" checked="" name="checkbox"><i></i>Alexandra</label>
+                                    <label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Alice</label>
+                                    <label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Anastasia</label>
+                                </div>
+                                <div class="column">
+                                    <label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Avelina</label>
+                                    <label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Basilia</label>
+                                    <label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Beatrice</label>
+                                </div>
+                                <div class="column">
+                                    <label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Cassandra</label>
+                                    <label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Clemencia</label>
+                                    <label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Desiderata</label>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section>
+                            <label class="label">Inline checkboxes</label>
+                            <div class="inline-group">
+                                <label class="checkbox"><input type="checkbox" checked="" name="checkbox-inline"><i></i>Alexandra</label>
+                                <label class="checkbox"><input type="checkbox" name="checkbox-inline"><i></i>Alice</label>
+                                <label class="checkbox"><input type="checkbox" name="checkbox-inline"><i></i>Anastasia</label>
+                                <label class="checkbox"><input type="checkbox" name="checkbox-inline"><i></i>Avelina</label>
+                                <label class="checkbox"><input type="checkbox" name="checkbox-inline"><i></i>Beatrice</label>
+                            </div>
+                        </section>
+                    </fieldset>
+
+                    <fieldset>
+                        <div class="row">
+                            <section class="column col-50">
+                                <label class="label">Toggles based on radios</label>
+                                <label class="toggle"><input type="radio" checked="" name="radio-toggle"><i class="no-rounded"></i>Alexandra</label>
+                                <label class="toggle"><input type="radio" name="radio-toggle"><i class="no-rounded"></i>Anastasia</label>
+                                <label class="toggle"><input type="radio" name="radio-toggle"><i class="no-rounded"></i>Avelina</label>
+                            </section>
+
+                          
+
+                            <section class="column col-50">
+                                <label class="label">Toggles based on checkboxes</label>
+                                <label class="toggle"><input type="checkbox" checked="" name="checkbox-toggle"><i class="no-rounded"></i>Cassandra</label>
+                                <label class="toggle"><input type="checkbox" name="checkbox-toggle"><i class="no-rounded"></i>Clemencia</label>
+                                <label class="toggle"><input type="checkbox" name="checkbox-toggle"><i class="no-rounded"></i>Desiderata</label>
+                            </section>
+                        </div>
+                    </fieldset>
+
+                    
+
+                    <fieldset>
+                        <section>
+                            <label class="label">Ratings with different icons</label>
+                            <div class="rating">
+                                <input type="radio" id="stars-rating-5" name="stars-rating">
+                                <label for="stars-rating-5"><i class="fa fa-star"></i></label>
+                                <input type="radio" id="stars-rating-4" name="stars-rating">
+                                <label for="stars-rating-4"><i class="fa fa-star"></i></label>
+                                <input type="radio" id="stars-rating-3" name="stars-rating">
+                                <label for="stars-rating-3"><i class="fa fa-star"></i></label>
+                                <input type="radio" id="stars-rating-2" name="stars-rating">
+                                <label for="stars-rating-2"><i class="fa fa-star"></i></label>
+                                <input type="radio" id="stars-rating-1" name="stars-rating">
+                                <label for="stars-rating-1"><i class="fa fa-star"></i></label>
+                                Stars
+                            </div>
+
+                            <div class="rating">
+                                <input type="radio" id="trophies-rating-7" name="trophies-rating">
+                                <label for="trophies-rating-7"><i class="fa fa-trophy"></i></label>
+                                <input type="radio" id="trophies-rating-6" name="trophies-rating">
+                                <label for="trophies-rating-6"><i class="fa fa-trophy"></i></label>
+                                <input type="radio" id="trophies-rating-5" name="trophies-rating">
+                                <label for="trophies-rating-5"><i class="fa fa-trophy"></i></label>
+                                <input type="radio" id="trophies-rating-4" name="trophies-rating">
+                                <label for="trophies-rating-4"><i class="fa fa-trophy"></i></label>
+                                <input type="radio" id="trophies-rating-3" name="trophies-rating">
+                                <label for="trophies-rating-3"><i class="fa fa-trophy"></i></label>
+                                <input type="radio" id="trophies-rating-2" name="trophies-rating">
+                                <label for="trophies-rating-2"><i class="fa fa-trophy"></i></label>
+                                <input type="radio" id="trophies-rating-1" name="trophies-rating">
+                                <label for="trophies-rating-1"><i class="fa fa-trophy"></i></label>
+                                Trophies
+                            </div>
+
+                            <div class="rating">
+                                <input type="radio" id="asterisks-rating-10" name="asterisks-rating">
+                                <label for="asterisks-rating-10"><i class="fa fa-asterisk"></i></label>
+                                <input type="radio" id="asterisks-rating-9" name="asterisks-rating">
+                                <label for="asterisks-rating-9"><i class="fa fa-asterisk"></i></label>
+                                <input type="radio" id="asterisks-rating-8" name="asterisks-rating">
+                                <label for="asterisks-rating-8"><i class="fa fa-asterisk"></i></label>
+                                <input type="radio" id="asterisks-rating-7" name="asterisks-rating">
+                                <label for="asterisks-rating-7"><i class="fa fa-asterisk"></i></label>
+                                <input type="radio" id="asterisks-rating-6" name="asterisks-rating">
+                                <label for="asterisks-rating-6"><i class="fa fa-asterisk"></i></label>
+                                <input type="radio" id="asterisks-rating-5" name="asterisks-rating">
+                                <label for="asterisks-rating-5"><i class="fa fa-asterisk"></i></label>
+                                <input type="radio" id="asterisks-rating-4" name="asterisks-rating">
+                                <label for="asterisks-rating-4"><i class="fa fa-asterisk"></i></label>
+                                <input type="radio" id="asterisks-rating-3" name="asterisks-rating">
+                                <label for="asterisks-rating-3"><i class="fa fa-asterisk"></i></label>
+                                <input type="radio" id="asterisks-rating-2" name="asterisks-rating">
+                                <label for="asterisks-rating-2"><i class="fa fa-asterisk"></i></label>
+                                <input type="radio" id="asterisks-rating-1" name="asterisks-rating">
+                                <label for="asterisks-rating-1"><i class="fa fa-asterisk"></i></label>
+                                Asterisks
+                            </div>
+                           
+                        </section>
+                    </fieldset>
+
+                    <footer>
+                        <button class="round-button-medium-green" type="submit">Submit</button>
+                        <button onclick="window.history.back();" class="round-button-medium-green" type="button">Back</button>
+                    </footer>
+                </form>
+            
+            </div>
+        </div>
+<div class="row">
+            <div class="column col-50">
+                <form class="bordered" action="#">
+                    <header>General Forms</header>
+
+                    <fieldset>
+                        <section>
+                            <label class="label">Text input</label>
+                            <label class="input">
+                                <input type="text">
+                            </label>
+                        </section>
+                        <section>
+                            <label class="label">Text input</label>
+                                <label class="input">
+                                    <i class="icon-append icon-lock-rounded-open4"></i>
+                                    <input type="text" id="name" name="name">
+                                </label>
+                        </section>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="column col-50">
+                
+                <form class="bordered" action="#">
+                    <header>General Forms</header>
+
+                    <fieldset>
+                        <section>
+                            <label class="label">Text input</label>
+                            <label class="input">
+                                <input type="text">
+                            </label>
+                        </section>
+                        <section>
+                            <label class="label">Text input</label>
+                                <label class="input">
+                                    <i class="icon-append icon-lock-rounded-open4"></i>
+                                    <input type="text" id="name" name="name">
+                                </label>
+                        </section>
+                    </fieldset>
+                </form>
+            </div>
+</div>

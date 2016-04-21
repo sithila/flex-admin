@@ -1,0 +1,14 @@
+// 
+.grid-items{
+    position: relative;
+    .grid-item {
+        position: absolute;
+        background: $pure-white;
+        padding: 20px;
+        width: 300px;
+        border: 1px solid $light-white;
+
+    }
+}
+
+

@@ -1,0 +1,23 @@
+.navigate-section{
+    .primary-nav{
+        position:absolute;
+        width: 100%;
+        z-index: 1;
+        margin-top: -41px;
+        padding-left: 15px;
+        padding-right: 15px;
+        height: auto;
+        ul{
+            @include bg-gradient-t2b(#43A4E2, #265EAE);
+            li{
+                display: inline-block;
+            }
+        }
+    }  
+}
+
+.page-container {
+    margin: 50px 15px 0 15px;
+    border: 1px solid #e5e5e5;
+    padding: 10px 15px;
+}

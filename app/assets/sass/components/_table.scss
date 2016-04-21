@@ -1,0 +1,38 @@
+// table
+
+.table {
+    margin-bottom: 20px;
+    max-width: 100%;
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    background-color: transparent;
+    tr{
+        th,td{
+            line-height: 1.42857;
+            padding: 8px;
+            border: 1px solid #ddd;
+            font-size: 0.9em;
+            &.header{
+                color: $dark-ash-1;
+                background: $p-nav-bg;
+                
+            }
+
+        }
+    }
+    tr:nth-of-type(2n+1) {
+        background-color: #f9f9f9;
+    }
+}
+
+@media (max-width: 60em) {
+    .table-responsive{
+        min-height: 0.01%;
+        overflow-x:auto;
+        border: 1px solid #ddd;
+        margin-bottom: 15px;
+        overflow-y: hidden;
+        width: 100%;
+    }
+}

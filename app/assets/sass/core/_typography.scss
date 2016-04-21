@@ -1,0 +1,65 @@
+p{
+    margin-bottom: 0.5em;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: $text-ash;
+    font-family: "Open Sans",Arial,sans-serif;
+    font-weight: normal;
+    margin-top: 5px;
+    text-shadow: none;
+}
+h1{
+    font-size: 28px;
+    line-height: 35px;    
+}
+h2{
+    font-size: 24px;
+    line-height: 33px;    
+}
+h3{
+    font-size: 20px;
+    line-height: 27px;    
+}
+h4{
+    font-size: 18px;
+    line-height: 25px;   
+}
+h5{
+    font-size: 14px;
+    line-height: 20px;   
+}
+h6{
+    font-size: 12px;
+    line-height: 18px;   
+}
+h1.main-title{
+    color: $text-ash;
+    margin-bottom: 10px;    
+    
+}
+
+.lead {
+    font-size: 21px;
+    font-weight: 300;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+
+.dropcap {
+    color: $text-ash;
+    float: left;
+    font-size: 45px;
+    font-weight: 200;
+    line-height: 30px;
+    margin: 0 5px 0 0;
+    padding: 5px 0;
+}
+.text-highlights {
+    background: $text-ash ;
+    color: $pure-white;
+    font-weight: 200;
+    padding: 2px 5px;
+    &.text-highlights-green {
+        background: $brand-green ;
+    }
+}

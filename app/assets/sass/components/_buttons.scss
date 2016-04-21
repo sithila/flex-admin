@@ -1,0 +1,66 @@
+// buttons
+//round
+.round-button-large-green {
+	@include button($brand-green,$pure-white,5px,0.7em 1em);
+    font-size: 1.2em;
+}
+.round-button-large-red {
+	@include button($notify-red,$pure-white,5px,0.7em 1em);
+    font-size: 1.2em;
+}
+.round-button-large-blue {
+	@include button($link-blue,$pure-white,5px,0.7em 1em);
+    font-size: 1.2em;
+}
+.round-button-large-ash {
+	@include button($border-cl-nav,$pure-white,5px,0.7em 1em);
+    font-size: 1.2em;
+}
+.round-button-medium-green {
+	@include button($brand-green,$pure-white,3px,0.6em 1em);
+}
+.round-button-medium-red {
+	@include button($notify-red,$pure-white,3px,0.6em 1em);
+}
+.round-button-medium-blue {
+	@include button($link-blue,$pure-white,3px,0.6em 1em);
+}
+.round-button-medium-ash {
+	@include button($border-cl-nav,$pure-white,3px,0.6em 1em);
+}
+.round-button-small-green {
+	@include button($brand-green,$pure-white,3px,0.4em 1em);
+}
+.round-button-small-red {
+	@include button($notify-red,$pure-white,3px,0.4em 1em);
+}
+
+//square
+.square-button-large-green {
+	@include button($brand-green,$pure-white,0px,1em 2em);
+}
+
+//round more
+.roundmore-button-large-green {
+	@include button($brand-green,$pure-white,2em,1em 2em);
+}
+
+.roundmore-button-large-blue {
+	@include button($button-blue,$pure-white,5px,1em 2em);
+}
+
+.roundmore-button-small-red {
+	@include button($notify-red,$pure-white,2em,0.4em 1em);
+}
+
+.button-icon{
+    -moz-osx-font-smoothing: grayscale;
+    display: inline-block;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-synthesis: weight style;
+    font-weight: normal;
+    line-height: 1;
+    text-rendering: auto;
+    margin-right: 10px;  
+}

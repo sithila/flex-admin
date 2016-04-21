@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" name="viewport">
+<title>Flex Admin</title>
+<link  href="assets/css/normalize.min.css" type="text/css" rel="stylesheet"/>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="assets/css/font-awesome.min.css">    
+<!--<link rel="stylesheet" href="assets/css/main.css"/>-->
+<script src="assets/js/vender/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+</head>
+<body data-ng-app="app" class="fadein-section">
+   
+    <nav class="navigate-section">
+        <div class="brand-nav">
+            <div href="" class="brand-logo"><a href="#/">Logo</a></div>
+            <div class="brand-nav-links">
+                <ul class="menu">
+                    <li> 
+                        <div class="dropdown theme-dd open">
+                                          <button aria-expanded="true" aria-haspopup="true" data-toggle="dropdown" id="dropdownMenu1" type="button" class="btn cleardd dropdown-toggle">
+                                            Theme
+                                            <span class="icon-dd icon-circle-down"></span>
+                                          </button>
+                                          <ul aria-labelledby="dropdownMenu1" class="dropdown-menu left">
+                                            <li>
+                                                <a class="text-center" rel="main-default" href="#">
+                                                    <strong>Default</strong>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="text-center" rel="main-theme1" href="#">
+                                                    <strong>theme1</strong>
+                                                </a> 
+                                            </li>
+                                            <li>
+                                                <a class="text-center" rel="main-theme2" href="#">
+                                                    <strong>theme2</strong>
+                                                </a> 
+                                            </li>
+                                            <li>
+                                                <a class="text-center" rel="main-theme3" href="#">
+                                                    <strong>theme3</strong>
+                                                </a> 
+                                            </li>
+                                            <li>
+                                                <a class="text-center" rel="main-theme-light" href="#">
+                                                    <strong>Light</strong>
+                                                </a> 
+                                            </li>
+                                            <li>
+                                                <a class="text-center" rel="main-theme-dark" href="#">
+                                                    <strong>Dark</strong>
+                                                </a> 
+                                            </li>
+                                            
+                                          </ul>
+                                        </div>
+                    </li>
+                    <li><a href="" class="">Settings</a></li>
+                    <li><a href="" class="">Welcome : Jemes <span class="profile-img"></span></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="primary-nav">
+            <ul class="primary-nav-links">
+                <li><a href="#/grids" class=""><span class="icon-small primary-nav-icon icon-grid3"> </span>Grids</a></li>
+                <li><a href="#/content" class=""><span class="icon-small primary-nav-icon icon-clipboard2"></span>Content</a></li>
+                <li><a href="#/component" class=""><span class="icon-small primary-nav-icon icon-profile3"></span>Component</a></li>
+                <li><a href="#/form" class=""><span class="icon-small primary-nav-icon icon-paragraph-left"></span>Form</a></li>
+                <li><a href="#search" class=""><span class="icon-small primary-nav-icon icon-search5"></span>Search</a></li>
+                <li><a href="#/chart" class=""><span class="icon-small primary-nav-icon icon-chart"></span>Chart</a></li>
+                <li><a href="" class=""><span class="icon-small primary-nav-icon icon-cog3"></span>Settings</a></li>
+            </ul>
+    </nav>
+        
+    <div class="page-container">
+        <ng-view></ng-view>
+        
+        <footer class="section footer">
+            <p>Copyright © 2016 Sithila Sandaruwan. All Rights Reserved.</p>
+        </footer>
+    </div>
+    
+     
+<script src="assets/js/angular/angular.min.js"></script>
+<script src="assets/js/angular/angular-route.min.js"></script> 
+        
+<script src="app.routes.js"></script>
+<script src="app.module.js"></script>
+<script src="app.core.js"></script>
+        
+<script src="pages/home/home.ctrl.js"></script>
+<script src="pages/grids/grids.ctrl.js"></script>
+<script src="pages/content/content.ctrl.js"></script>
+<script src="pages/component/component.ctrl.js"></script>        
+<script src="pages/chart/chart.ctrl.js"></script>
+<script src="pages/form/form.ctrl.js"></script>         
+        
+    
+<!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>-->
+<script>window.jQuery || document.write('<script src="assets/js/jquery/jquery-1.11.2.min.js"><\/script>')</script>
+        <script src="assets/js/jquery/jquery-ui.min.js"></script> 
+<script src="assets/js/flot/jquery.flot.min.js"></script>
+    <script src="assets/js/flot/jquery.flot.pie.min.js"></script>
+    <script src="assets/js/flot/jquery.flot.categories.min.js"></script>
+    <script src="assets/js/flot/jquery.flot.grow.js"></script>    
+    <script src="assets/js/flot/jquery.flot.tooltip.min.js"></script>    
+    <script src="assets/js/flot/jquery.flot.orderBars.js"></script>
+    <script src="assets/js/flot/jquery.flot.stack.min.js"></script> 
+<script src="assets/js/main.js"></script> 
+        
+     
+
+</body>
+    
+</html>

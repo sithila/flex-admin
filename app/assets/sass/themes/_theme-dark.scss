@@ -1,0 +1,31 @@
+.navigate-section{
+    .primary-nav{
+        @include bg-gradient-t2b(#262931, #262931);
+        position: fixed;
+        width: 250px;
+        z-index: 1;
+        height: 100%;
+        visibility: visible;
+        ul{
+            li{
+                a{
+                    color:#646669;
+                }
+            }
+        }
+    }
+    @media (max-width: 760px) {
+        .primary-nav {
+            visibility: hidden;
+            }
+    }
+}
+
+.page-container {
+    margin: 0 0 0 250px;  
+}
+@media (max-width: 760px) {
+        .page-container {
+            margin: 0 0 0 0px;  
+        }
+    }
