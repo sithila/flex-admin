@@ -1,0 +1,83 @@
+.model_dialog {
+    top: 0%;
+    display: none;
+    left: 20%;
+    outline: 0 none; 
+    position:absolute;
+    margin: 0 auto;
+   
+	width:auto;
+    z-index: 1050;
+}
+
+
+.dialog{
+   display: block;
+   position:relative;
+   background-color: #ffffff; 
+   padding: 0px;
+   z-index: 1060;
+   font-family: Verdana;
+   font-size: 10pt;
+   border-radius: 0px;
+   box-shadow: 0 2px 26px rgba(0, 0, 0, 0.6), 0 0 0 0px rgba(0, 0, 0, 0.1);
+   margin: 0px auto;
+   width: 800px;
+   
+	.dialog_header{
+		background-color: #cccccc;
+		color:#ffffff;
+		padding:10px;
+		p{
+			color:#ffffff;
+			margin-top: -5px;
+		
+		}
+		.title{
+		font-size:34px;
+		padding:5px 10px 0px 130px;
+		opacity: 0.4;
+		width:80%;
+    	filter: alpha(opacity=40);
+		
+		}
+		.model-logo{
+		display:block;
+		float:left;
+		
+		}
+		.news-header{
+			padding-left:50px;
+		}
+		.dialog-title{
+			margin:15px 0;
+		}
+		.close{
+			display:block;
+			width:10px;
+			height:10px;
+			position:absolute;
+			right:20px;
+			top:20px;
+			color:#999999;
+			font-size:20px;
+		}
+	}
+	.ash-bg{
+		background: #cccccc;
+	}
+	.dialog_body{
+		padding:10px;
+		min-height:150px;
+		
+				.model-form-content{
+					padding: 20px 40px;
+					}
+				
+		
+	}
+	.dialog_footer{
+		padding:10px;
+		}
+	
+}

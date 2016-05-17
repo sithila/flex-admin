@@ -19,8 +19,25 @@ body{
     background: $pure-white;
     border-bottom: 1px solid $light-white;
     min-height: 50px;
-
+    @media (max-width: 40em) {
+               min-height: 100px;  
+            }
     position: relative;
+    .mobile-togglemenu{
+        width: 30px;
+        height:30px;
+        display: inline-block;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        display: none;
+        z-index: 5;
+        
+        @media (max-width: 40em) {
+               display:block;
+            }
+        
+    }
     .brand-nav{
         position: relative;
         background-color: $pure-white;
@@ -32,6 +49,9 @@ body{
             height: 100%;
             float: right;
             height: 50px;
+            @media (max-width: 40em) {
+               width:100%;  
+            }
             .menu{
                 display: table-row;
                 display: table-cell;
@@ -54,6 +74,10 @@ body{
             display: table;
             float: left;
             height: 50px;
+            
+            @media (max-width: 40em) {
+               width:100%;  
+            }
             a{
                 display: table-row;
                 display: table-cell;
@@ -72,6 +96,14 @@ body{
         //width: 250px;
         //z-index: 1;
         padding-top: 50px;
+         transition: opacity .25s ease-in-out;
+        -moz-transition: opacity .25s ease-in-out;
+        -webkit-transition: opacity .25s ease-in-out;
+        &.visible{
+            visibility: visible;
+            z-index: 3;
+            padding-top: 0px;
+        }
     
         ul{
             li{
