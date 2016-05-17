@@ -6897,6 +6897,18 @@ body {
   @media (max-width: 40em) {
     .navigate-section {
       min-height: 100px; } }
+  .navigate-section .mobile-togglemenu {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: none;
+    z-index: 5; }
+    @media (max-width: 40em) {
+      .navigate-section .mobile-togglemenu {
+        display: block; } }
   .navigate-section .brand-nav {
     position: relative;
     background-color: #ffffff;
@@ -6935,7 +6947,14 @@ body {
         vertical-align: middle; }
   .navigate-section .primary-nav {
     margin-top: -50px;
-    padding-top: 50px; }
+    padding-top: 50px;
+    transition: opacity .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out; }
+    .navigate-section .primary-nav.visible {
+      visibility: visible;
+      z-index: 3;
+      padding-top: 0px; }
     .navigate-section .primary-nav ul li {
       margin-top: -1px;
       position: relative;

@@ -9581,19 +9581,21 @@ form {
     padding: 10px; }
 
 .navigate-section .primary-nav {
-  background-color: #43A4E2;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#43A4E2), to(#265EAE));
-  background-image: -webkit-linear-gradient(top, #43A4E2, #265EAE);
-  background-image: -moz-linear-gradient(top, #43A4E2, #265EAE);
-  background-image: -ms-linear-gradient(top, #43A4E2, #265EAE);
-  background-image: -o-linear-gradient(top, #43A4E2, #265EAE);
-  background-image: linear-gradient(top, #43A4E2, #265EAE);
-  filter: progid:DXImageTransform.Microsoft.gradient(start-colourStr='#43A4E2', end-colourStr='#265EAE');
+  background-color: #262931;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#262931), to(#262931));
+  background-image: -webkit-linear-gradient(top, #262931, #262931);
+  background-image: -moz-linear-gradient(top, #262931, #262931);
+  background-image: -ms-linear-gradient(top, #262931, #262931);
+  background-image: -o-linear-gradient(top, #262931, #262931);
+  background-image: linear-gradient(top, #262931, #262931);
+  filter: progid:DXImageTransform.Microsoft.gradient(start-colourStr='#262931', end-colourStr='#262931');
   position: fixed;
   width: 250px;
   z-index: 1;
   height: 100%;
   visibility: visible; }
+  .navigate-section .primary-nav ul li a {
+    color: #646669; }
 @media (max-width: 760px) {
   .navigate-section .primary-nav {
     visibility: hidden; } }

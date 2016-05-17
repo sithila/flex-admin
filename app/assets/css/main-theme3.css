@@ -6894,6 +6894,21 @@ body {
   border-bottom: 1px solid #e5e5e5;
   min-height: 50px;
   position: relative; }
+  @media (max-width: 40em) {
+    .navigate-section {
+      min-height: 100px; } }
+  .navigate-section .mobile-togglemenu {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: none;
+    z-index: 5; }
+    @media (max-width: 40em) {
+      .navigate-section .mobile-togglemenu {
+        display: block; } }
   .navigate-section .brand-nav {
     position: relative;
     background-color: #ffffff;
@@ -6905,6 +6920,9 @@ body {
       height: 100%;
       float: right;
       height: 50px; }
+      @media (max-width: 40em) {
+        .navigate-section .brand-nav .brand-nav-links {
+          width: 100%; } }
       .navigate-section .brand-nav .brand-nav-links .menu {
         display: table-row;
         display: table-cell;
@@ -6920,13 +6938,23 @@ body {
       display: table;
       float: left;
       height: 50px; }
+      @media (max-width: 40em) {
+        .navigate-section .brand-nav .brand-logo {
+          width: 100%; } }
       .navigate-section .brand-nav .brand-logo a {
         display: table-row;
         display: table-cell;
         vertical-align: middle; }
   .navigate-section .primary-nav {
     margin-top: -50px;
-    padding-top: 50px; }
+    padding-top: 50px;
+    transition: opacity .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out; }
+    .navigate-section .primary-nav.visible {
+      visibility: visible;
+      z-index: 3;
+      padding-top: 0px; }
     .navigate-section .primary-nav ul li {
       margin-top: -1px;
       position: relative;
@@ -9491,6 +9519,67 @@ form {
     opacity: 0; }
   100% {
     opacity: 1; } }
+.model_dialog {
+  top: 0%;
+  display: none;
+  left: 20%;
+  outline: 0 none;
+  position: absolute;
+  margin: 0 auto;
+  width: auto;
+  z-index: 1050; }
+
+.dialog {
+  display: block;
+  position: relative;
+  background-color: #ffffff;
+  padding: 0px;
+  z-index: 1060;
+  font-family: Verdana;
+  font-size: 10pt;
+  border-radius: 0px;
+  box-shadow: 0 2px 26px rgba(0, 0, 0, 0.6), 0 0 0 0px rgba(0, 0, 0, 0.1);
+  margin: 0px auto;
+  width: 800px; }
+  .dialog .dialog_header {
+    background-color: #cccccc;
+    color: #ffffff;
+    padding: 10px; }
+    .dialog .dialog_header p {
+      color: #ffffff;
+      margin-top: -5px; }
+    .dialog .dialog_header .title {
+      font-size: 34px;
+      padding: 5px 10px 0px 130px;
+      opacity: 0.4;
+      width: 80%;
+      filter: alpha(opacity=40); }
+    .dialog .dialog_header .model-logo {
+      display: block;
+      float: left; }
+    .dialog .dialog_header .news-header {
+      padding-left: 50px; }
+    .dialog .dialog_header .dialog-title {
+      margin: 15px 0; }
+    .dialog .dialog_header .close {
+      display: block;
+      width: 10px;
+      height: 10px;
+      position: absolute;
+      right: 20px;
+      top: 20px;
+      color: #999999;
+      font-size: 20px; }
+  .dialog .ash-bg {
+    background: #cccccc; }
+  .dialog .dialog_body {
+    padding: 10px;
+    min-height: 150px; }
+    .dialog .dialog_body .model-form-content {
+      padding: 20px 40px; }
+  .dialog .dialog_footer {
+    padding: 10px; }
+
 .navigate-section .primary-nav {
   position: absolute;
   width: 100%;
