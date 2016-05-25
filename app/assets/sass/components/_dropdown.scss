@@ -1,0 +1,12 @@
+.dropdown{
+    display: inline-block;
+    position: relative;
+    width: auto;
+    margin-right: 15px;
+    .btn{
+        &.dd-btn-primary{
+            @include button($link-blue,$pure-white,3px,0.6em 1em);
+        }
+        
+    }
+}

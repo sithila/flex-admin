@@ -23,7 +23,8 @@ angular.module( 'moduleA', [] )
       //alert(modal);
       var scrollval = $(window).scrollTop();
       $(".model_dialog .dialog").css("position", "relative").css("top", scrollval);
-	   
+	  $('<div id="overlay" class="overlay"></div>').appendTo('body');
+       
       
 	  //$("body").css("overflow", "hidden");
       $("#overlay").show();
