@@ -345,25 +345,29 @@
                 </form>
             </div>
             <div class="column col-50">
-                
-                <form class="bordered" action="#">
+                <div formsubmit-directive>
+                <form class="bordered" action="ajax_respond.php" method="post">
                     <header>General Forms</header>
 
                     <fieldset>
                         <section>
                             <label class="label">Text input</label>
                             <label class="input">
-                                <input type="text">
+                                <input type="text" name="name" ng-model="formData.name">
                             </label>
                         </section>
                         <section>
                             <label class="label">Text input</label>
                                 <label class="input">
                                     <i class="icon-append icon-lock-rounded-open4"></i>
-                                    <input type="text" id="name" name="name">
+                                    <input type="text" name="address" ng-model="formData.address">
                                 </label>
+                        </section>
+                        <section>
+                                <button class="round-button-medium-green" ng-click='formSubmit($event)'  type="submit">Submit</button>
                         </section>
                     </fieldset>
                 </form>
+                </div>
             </div>
 </div>

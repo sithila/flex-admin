@@ -1,14 +1,33 @@
 
 angular.module( 'moduleGallery', [] )
 
-.directive( 'galleryDirective', function ($compile) {
+.directive( 'galleryDirective', function ($timeout) {
     
-    
+    $timeout(function(){
+        //alert('DOM ready');
+    });
   // ...
     return {
         
   
         link: function(scope, element, attrs, event) {
+            
+            var init = function () {
+    setupBlocks();
+                
+	           $(window).resize(setupBlocks);
+};
+            
+            setTimeout(function () {                    
+                setupBlocks();
+            }, 1000);
+
+init();
+            
+            angular.element(document).ready(function () {
+         setupBlocks();
+    });
+           
             
             scope.showGallery = function(e) {
                 var imgarr = [];
@@ -34,7 +53,6 @@ angular.module( 'moduleGallery', [] )
             //closeMenu();
         };
         scope.closeGallery = function(e) {
-            alert('fsfsf');
             e.preventDefault();
              HideGallery();
         };
@@ -56,7 +74,7 @@ angular.module( 'moduleGallery', [] )
        
       $(".gallery-dialog .gallery-dialog-wrapper").css("position", "relative").css("top", scrollval);
          
-         $('html, body').css({
+         $('html').css({
             'overflow': 'hidden',
             'height': '100%'
         });
@@ -64,13 +82,13 @@ angular.module( 'moduleGallery', [] )
       
 	  //$("body").css("overflow", "hidden");
       $("#overlay").show();
-      $(".gallery-dialog" ).fadeIn(300);
+      $(".gallery-dialog" ).fadeIn(300).addClass('show');
      $('.gallery-dialog').on('click', 'a.close', function(e){
           e.preventDefault();
          //alert('sdsd');
          $("#overlay").hide();
          $(".gallery-dialog").remove();
-         $('html, body').css({
+         $('html').css({
                 'overflow': 'auto',
                 'height': 'auto'
             });
@@ -130,12 +148,9 @@ var margin = 20;
 var windowWidth = 0;
 var blocks = [];
 
-$(function(){
-	$(window).resize(setupBlocks);
-});
+
 
 function setupBlocks() {
-    //alert($('.gallery-items').height());
 	windowWidth = $(window).width();
 	colWidth = $('.gallery-item').outerWidth();
 	blocks = [];
@@ -166,6 +181,7 @@ function positionBlocks() {
 		blocks[index] = min+$(this).outerHeight()+margin;
 	});	
 }
+            
 
 Array.min = function(array) {
     return Math.min.apply(Math, array);

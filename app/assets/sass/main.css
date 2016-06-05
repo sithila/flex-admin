@@ -9203,126 +9203,134 @@ body {
     /* line 154, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/core/_layouts.scss */
     .page-container .content-header .sub-title {
       font-size: 1em; }
-  /* line 158, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/core/_layouts.scss */
-  .page-container .row {
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    flex-flow: row wrap;
-    align-items: stretch;
-    margin: 0 -0.6em; }
-    /* line 15, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/mixins/_clearfix.scss */
-    .page-container .row:before,
-    .page-container .row:after {
-      content: " ";
-      display: table; }
-    /* line 19, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/mixins/_clearfix.scss */
-    .page-container .row:after {
-      clear: both; }
-    /* line 165, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/core/_layouts.scss */
-    .page-container .row blockquote {
-      border-left-width: 2px;
-      padding: 5px 15px;
-      margin-bottom: 15px; }
-      /* line 169, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/core/_layouts.scss */
-      .page-container .row blockquote.common {
-        background: #ffffff;
-        border-color: #e5e5e5;
-        border-style: solid;
-        border-width: 0 0 0 2px;
-        padding: 15px; }
-      /* line 177, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/core/_layouts.scss */
-      .page-container .row blockquote.highlight {
-        background: #ffffff;
-        border-color: #3598C1;
-        border-style: solid;
-        border-width: 0 0 0 2px;
-        padding: 15px; }
-      /* line 185, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/core/_layouts.scss */
-      .page-container .row blockquote.filled-ash {
-        background: #e5e5e5;
-        padding: 15px; }
-      /* line 190, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/core/_layouts.scss */
-      .page-container .row blockquote.filled-blue {
-        background: #3598C1;
-        padding: 15px;
-        color: #ffffff; }
-    /* line 197, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/core/_layouts.scss */
-    .page-container .row .column {
-      -webkit-box-flex: 1 auto;
-      -moz-box-flex: 1 auto;
-      -webkit-flex: 1 auto;
-      -ms-flex: 1 auto;
-      flex: 1 auto;
-      -webkit-box-ordinal-group: 2;
-      -moz-box-ordinal-group: 2;
-      -ms-flex-order: 2;
-      -webkit-order: 2;
-      order: 2;
-      flex-grow: 1;
-      padding: 0.6em; }
-      /* line 202, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/core/_layouts.scss */
-      .page-container .row .column .headding {
-        border-bottom: 1px solid #e5e5e5;
-        display: block;
-        margin: 10px 0 25px; }
-        /* line 206, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/core/_layouts.scss */
-        .page-container .row .column .headding h2, .page-container .row .column .headding h3, .page-container .row .column .headding h4 {
-          border-bottom: 2px solid #3598C1;
-          display: inline-block;
-          margin: 0 0 -2px;
-          padding-bottom: 5px; }
-      /* line 213, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/core/_layouts.scss */
-      .page-container .row .column.col-15 {
-        width: 15%; }
-      /* line 216, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/core/_layouts.scss */
-      .page-container .row .column.col-85 {
-        width: 85%; }
-      /* line 219, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/core/_layouts.scss */
-      .page-container .row .column.col-75 {
-        width: 75%; }
-      /* line 222, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/core/_layouts.scss */
-      .page-container .row .column.col-60 {
-        width: 60%; }
-      /* line 225, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/core/_layouts.scss */
-      .page-container .row .column.col-50 {
-        width: 50%; }
-      /* line 228, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/core/_layouts.scss */
-      .page-container .row .column.col-40 {
-        width: 40%; }
-      /* line 231, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/core/_layouts.scss */
-      .page-container .row .column.col-25 {
-        width: 25%; }
-    @media (max-width: 40em) {
-      /* line 236, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/core/_layouts.scss */
-      .page-container .row .column {
-        width: 100%; }
-        /* line 238, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/core/_layouts.scss */
-        .page-container .row .column.col-75 {
-          width: 100%; }
-        /* line 241, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/core/_layouts.scss */
-        .page-container .row .column.col-60 {
-          width: 100%; }
-        /* line 244, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/core/_layouts.scss */
-        .page-container .row .column.col-40 {
-          width: 100%; }
-        /* line 247, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/core/_layouts.scss */
-        .page-container .row .column.col-25 {
-          width: 100%; } }
-  /* line 254, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/core/_layouts.scss */
+  /* line 159, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/core/_layouts.scss */
   .page-container .footer {
     position: relative;
     margin-top: 2em;
     padding: 20px 0; }
 
-/* line 261, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/core/_layouts.scss */
+/* line 165, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/core/_layouts.scss */
+.container {
+  padding: 0 30px;
+  position: inherit;
+  max-height: 650px;
+  font-size: 0.8em; }
+
+/* line 173, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/core/_layouts.scss */
+.row {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: stretch;
+  margin: 0 -0.6em; }
+  /* line 15, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/mixins/_clearfix.scss */
+  .row:before,
+  .row:after {
+    content: " ";
+    display: table; }
+  /* line 19, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/mixins/_clearfix.scss */
+  .row:after {
+    clear: both; }
+  /* line 180, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/core/_layouts.scss */
+  .row blockquote {
+    border-left-width: 2px;
+    padding: 5px 15px;
+    margin-bottom: 15px; }
+    /* line 184, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/core/_layouts.scss */
+    .row blockquote.common {
+      background: #ffffff;
+      border-color: #e5e5e5;
+      border-style: solid;
+      border-width: 0 0 0 2px;
+      padding: 15px; }
+    /* line 192, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/core/_layouts.scss */
+    .row blockquote.highlight {
+      background: #ffffff;
+      border-color: #3598C1;
+      border-style: solid;
+      border-width: 0 0 0 2px;
+      padding: 15px; }
+    /* line 200, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/core/_layouts.scss */
+    .row blockquote.filled-ash {
+      background: #e5e5e5;
+      padding: 15px; }
+    /* line 205, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/core/_layouts.scss */
+    .row blockquote.filled-blue {
+      background: #3598C1;
+      padding: 15px;
+      color: #ffffff; }
+  /* line 212, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/core/_layouts.scss */
+  .row .column {
+    -webkit-box-flex: 1 auto;
+    -moz-box-flex: 1 auto;
+    -webkit-flex: 1 auto;
+    -ms-flex: 1 auto;
+    flex: 1 auto;
+    -webkit-box-ordinal-group: 2;
+    -moz-box-ordinal-group: 2;
+    -ms-flex-order: 2;
+    -webkit-order: 2;
+    order: 2;
+    flex-grow: 1;
+    padding: 0.6em; }
+    /* line 217, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/core/_layouts.scss */
+    .row .column .headding {
+      border-bottom: 1px solid #e5e5e5;
+      display: block;
+      margin: 10px 0 25px; }
+      /* line 221, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/core/_layouts.scss */
+      .row .column .headding h2, .row .column .headding h3, .row .column .headding h4 {
+        border-bottom: 2px solid #3598C1;
+        display: inline-block;
+        margin: 0 0 -2px;
+        padding-bottom: 5px; }
+    /* line 228, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/core/_layouts.scss */
+    .row .column.col-15 {
+      width: 15%; }
+    /* line 231, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/core/_layouts.scss */
+    .row .column.col-85 {
+      width: 85%; }
+    /* line 234, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/core/_layouts.scss */
+    .row .column.col-75 {
+      width: 75%; }
+    /* line 237, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/core/_layouts.scss */
+    .row .column.col-60 {
+      width: 60%; }
+    /* line 240, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/core/_layouts.scss */
+    .row .column.col-50 {
+      width: 50%; }
+    /* line 243, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/core/_layouts.scss */
+    .row .column.col-40 {
+      width: 40%; }
+    /* line 246, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/core/_layouts.scss */
+    .row .column.col-25 {
+      width: 25%; }
+  @media (max-width: 40em) {
+    /* line 251, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/core/_layouts.scss */
+    .row .column {
+      width: 100%; }
+      /* line 253, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/core/_layouts.scss */
+      .row .column.col-75 {
+        width: 100%; }
+      /* line 256, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/core/_layouts.scss */
+      .row .column.col-60 {
+        width: 100%; }
+      /* line 259, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/core/_layouts.scss */
+      .row .column.col-40 {
+        width: 100%; }
+      /* line 262, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/core/_layouts.scss */
+      .row .column.col-25 {
+        width: 100%; } }
+
+/* line 270, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/core/_layouts.scss */
 .center-img {
   text-align: center;
   margin-bottom: 1em; }
 
-/* line 265, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/core/_layouts.scss */
+/* line 274, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/core/_layouts.scss */
 .full-img {
   width: 100%; }
 
@@ -12198,34 +12206,49 @@ form {
   border-radius: 0px;
   box-shadow: 0 2px 26px rgba(0, 0, 0, 0.6), 0 0 0 0px rgba(0, 0, 0, 0.1);
   margin: 0px auto;
-  width: 800px; }
-  /* line 27, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/components/_modal.scss */
+  width: 800px;
+  -webkit-transform: scale(0.1);
+  -ms-transform: scale(0.1);
+  transform: scale(0.1);
+  transition: all 3s;
+  opacity: 0; }
+  /* line 32, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/components/_modal.scss */
+  .dialog.show {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    transform: rotate(360deg);
+    -webkit-transform: translate3d(0, 0px, 0);
+    transform: translate3d(0, 0px, 0);
+    transform-origin: top left;
+    opacity: 1; }
+  /* line 43, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/components/_modal.scss */
   .dialog .dialog_header {
     background-color: #cccccc;
     color: #ffffff;
     padding: 10px; }
-    /* line 31, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/components/_modal.scss */
+    /* line 47, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/components/_modal.scss */
     .dialog .dialog_header p {
       color: #ffffff;
       margin-top: -5px; }
-    /* line 36, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/components/_modal.scss */
+    /* line 52, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/components/_modal.scss */
     .dialog .dialog_header .title {
       font-size: 34px;
       padding: 5px 10px 0px 130px;
       opacity: 0.4;
       width: 80%;
       filter: alpha(opacity=40); }
-    /* line 44, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/components/_modal.scss */
+    /* line 60, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/components/_modal.scss */
     .dialog .dialog_header .model-logo {
       display: block;
       float: left; }
-    /* line 49, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/components/_modal.scss */
+    /* line 65, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/components/_modal.scss */
     .dialog .dialog_header .news-header {
       padding-left: 50px; }
-    /* line 52, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/components/_modal.scss */
+    /* line 68, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/components/_modal.scss */
     .dialog .dialog_header .dialog-title {
       margin: 15px 0; }
-    /* line 55, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/components/_modal.scss */
+    /* line 71, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/components/_modal.scss */
     .dialog .dialog_header .close {
       display: block;
       width: 10px;
@@ -12235,21 +12258,21 @@ form {
       top: 20px;
       color: #999999;
       font-size: 20px; }
-  /* line 66, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/components/_modal.scss */
+  /* line 82, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/components/_modal.scss */
   .dialog .ash-bg {
     background: #cccccc; }
-  /* line 69, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/components/_modal.scss */
+  /* line 85, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/components/_modal.scss */
   .dialog .dialog_body {
     padding: 10px;
     min-height: 150px; }
-    /* line 73, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/components/_modal.scss */
+    /* line 89, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/components/_modal.scss */
     .dialog .dialog_body .model-form-content {
       padding: 20px 40px; }
-  /* line 79, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/components/_modal.scss */
+  /* line 95, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/components/_modal.scss */
   .dialog .dialog_footer {
     padding: 10px; }
 
-/* line 85, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/components/_modal.scss */
+/* line 101, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/components/_modal.scss */
 .overlay {
   position: fixed;
   top: 0;
@@ -12263,6 +12286,42 @@ form {
   z-index: 1049;
   display: none;
   background: rgba(0, 0, 0, 0.8); }
+
+/* line 118, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/components/_modal.scss */
+.model_dialogsss {
+  -webkit-animation: bummer 1s;
+  animation: bummer 1s;
+  -webkit-transform: scale(0.1);
+  -moz-transform: scale(0.1);
+  -ms-transform: scale(0.1);
+  transform: scale(0.1);
+  opacity: 0;
+  position: relative;
+  top: 300px; }
+
+@-webkit-keyframes bummer {
+  100% {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    transform: rotate(360deg);
+    -webkit-transform: translate3d(0, 0px, 0);
+    transform: translate3d(0, 0px, 0);
+    transform-origin: top left;
+    opacity: 1; } }
+
+@keyframes bummer {
+  100% {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    transform: rotate(360deg);
+    -webkit-transform: translate3d(0, -300px, 0);
+    transform: translate3d(0, -300px, 0);
+    transform-origin: top left;
+    opacity: 1; } }
 
 /* line 1, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/components/_dropdown.scss */
 .dropdown {
@@ -12327,7 +12386,10 @@ form {
       position: relative;
       background: #ffffff;
       padding: 10px; }
-    /* line 18, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/components/_gallery.scss */
+      /* line 17, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/components/_gallery.scss */
+      .gallery-items .gallery-item .details .title {
+        font-weight: bold; }
+    /* line 21, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/components/_gallery.scss */
     .gallery-items .gallery-item:hover {
       -webkit-box-shadow: 0 0px 20px 0 rgba(0, 0, 0, 0.19);
       -khtml-box-shadow: 0 0px 20px 0 rgba(0, 0, 0, 0.19);
@@ -12336,7 +12398,7 @@ form {
       -o-box-shadow: 0 0px 20px 0 rgba(0, 0, 0, 0.19);
       box-shadow: 0 0px 20px 0 rgba(0, 0, 0, 0.19); }
 
-/* line 25, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/components/_gallery.scss */
+/* line 28, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/components/_gallery.scss */
 .gallery-dialog {
   top: 0%;
   display: none;
@@ -12345,9 +12407,24 @@ form {
   margin: 0 auto;
   height: 100%;
   width: 100%;
-  z-index: 1050; }
+  z-index: 1050;
+  -webkit-transform: scale(0.1);
+  -ms-transform: scale(0.1);
+  transform: scale(0.1);
+  transition: all 2s;
+  opacity: 0; }
+  /* line 42, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/components/_gallery.scss */
+  .gallery-dialog.show {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    transform: rotate(360deg);
+    -webkit-transform: translate3d(0, 0px, 0);
+    transform: translate3d(0, 0px, 0);
+    transform-origin: top right;
+    opacity: 1; }
 
-/* line 35, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/components/_gallery.scss */
+/* line 53, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/components/_gallery.scss */
 .gallery-dialog-wrapper {
   display: block;
   position: relative;
@@ -12360,7 +12437,7 @@ form {
   margin: 0px auto;
   width: 100%;
   height: 100%; }
-  /* line 47, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/components/_gallery.scss */
+  /* line 65, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/components/_gallery.scss */
   .gallery-dialog-wrapper .close {
     display: block;
     width: 10px;
@@ -12372,7 +12449,7 @@ form {
     z-index: 1;
     font-weight: 300;
     color: #D75328; }
-  /* line 59, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/components/_gallery.scss */
+  /* line 77, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/components/_gallery.scss */
   .gallery-dialog-wrapper .slide {
     display: block;
     width: 50px;
@@ -12385,13 +12462,13 @@ form {
     font-size: 2.5em;
     line-height: 44px;
     cursor: pointer; }
-    /* line 71, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/components/_gallery.scss */
+    /* line 89, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/components/_gallery.scss */
     .gallery-dialog-wrapper .slide.next {
       right: 310px; }
-    /* line 75, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/components/_gallery.scss */
+    /* line 93, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/components/_gallery.scss */
     .gallery-dialog-wrapper .slide.prev {
       left: 10px; }
-  /* line 81, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/components/_gallery.scss */
+  /* line 99, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/components/_gallery.scss */
   .gallery-dialog-wrapper .wrapper {
     width: 100%;
     background: rgba(0, 0, 0, 0.5);
@@ -12399,10 +12476,10 @@ form {
     position: relative;
     height: 100%;
     text-align: center; }
-    /* line 89, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/components/_gallery.scss */
+    /* line 107, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/components/_gallery.scss */
     .gallery-dialog-wrapper .wrapper img {
       width: 100%; }
-  /* line 93, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/components/_gallery.scss */
+  /* line 111, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/components/_gallery.scss */
   .gallery-dialog-wrapper .content-wrapper {
     width: 300px;
     background: #ffffff;
@@ -12411,10 +12488,10 @@ form {
     height: 100%;
     padding: 15px;
     text-align: left; }
-    /* line 102, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/components/_gallery.scss */
+    /* line 120, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/components/_gallery.scss */
     .gallery-dialog-wrapper .content-wrapper .title {
       font-size: 2em; }
-    /* line 105, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/components/_gallery.scss */
+    /* line 123, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/components/_gallery.scss */
     .gallery-dialog-wrapper .content-wrapper discription {
       font-size: 1em; }
 

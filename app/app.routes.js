@@ -34,6 +34,10 @@ function config ($routeProvider) {
             templateUrl: 'pages/chart/chart.tpl.html',
             controller: 'chartController as chart'
         })
+        .when('/layouts', {
+            templateUrl: 'pages/layouts/layouts.tpl.html',
+            controller: 'layoutController as layout'
+        })
         .otherwise({
             redirectTo: '/'
         });

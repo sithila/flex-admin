@@ -155,7 +155,22 @@ body{
             font-size: 1em;
         }
     }
-    .row{
+    
+    .footer{
+        position:relative;
+        margin-top: 2em;
+        padding: 20px 0;
+    }
+}
+.container{
+    //margin: 0 0 0 250px;
+    padding: 0 30px;
+    position: inherit;
+    max-height: 650px;
+    font-size: 0.8em;
+}
+
+.row{
 
         @include flexbox();
         flex-flow: row wrap;
@@ -251,12 +266,6 @@ body{
             
         }
     }
-    .footer{
-        position:relative;
-        margin-top: 2em;
-        padding: 20px 0;
-    }
-}
 
 .center-img{
     text-align: center;
