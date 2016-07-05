@@ -8885,6 +8885,14 @@ form {
 
 .dropdown {
   position: relative; }
+  .dropdown .sel-item {
+    padding: 5px;
+    margin-right: 10px;
+    display: inline-block; }
+    .dropdown .sel-item .icon-close {
+      display: inline-block;
+      margin-left: 10px;
+      color: #D75328; }
   .dropdown .btn {
     background-color: #e6e6e6;
     border-color: #adadad;
@@ -8909,6 +8917,10 @@ form {
       border-color: #ffffff;
       font-size: 13px; }
     .dropdown .btn .icon-dd {
+      width: 10px;
+      height: 10px;
+      display: inline-block; }
+    .dropdown .btn .icon-close {
       width: 10px;
       height: 10px;
       display: inline-block; }
@@ -8945,6 +8957,8 @@ form {
         line-height: 1.42857;
         padding: 3px 20px;
         white-space: nowrap; }
+        .dropdown .dropdown-menu li a input[type="checkbox"] {
+          margin-right: 10px; }
 
 .ui-datepicker {
   display: none;
@@ -9798,6 +9812,35 @@ form {
       font-size: 2em; }
     .gallery-dialog-wrapper .content-wrapper discription {
       font-size: 1em; }
+
+.accordion-panel {
+  background: #ffffff;
+  border-radius: 0px;
+  border-radius: 0px;
+  text-align: left;
+  width: 100%;
+  margin-bottom: 5px; }
+  .accordion-panel .accordion-headding {
+    border-bottom: 1px solid #e5e5e5;
+    border-radius: 0;
+    padding: 10px 30px 10px 15px;
+    color: #657181;
+    display: table;
+    position: relative; }
+    .accordion-panel .accordion-headding a {
+      padding-right: 30px;
+      width: 100%;
+      display: block; }
+    .accordion-panel .accordion-headding .expand {
+      position: relative;
+      display: table-cell;
+      vertical-align: middle;
+      right: 0px; }
+  .accordion-panel .accordion-body {
+    padding: 15px;
+    background: #ffffff;
+    border-radius: 0;
+    display: none; }
 
 .navigate-section .primary-nav {
   background-color: #262931;

@@ -368,6 +368,16 @@ form {
 
 .dropdown{
     position: relative;
+    .sel-item{
+        padding: 5px;
+        margin-right: 10px;
+        display: inline-block;
+        .icon-close{
+            display: inline-block;
+            margin-left: 10px;
+            color: $active-red;
+        }
+    }
     .btn {
         background-color: #e6e6e6;
         border-color: #adadad;
@@ -396,7 +406,13 @@ form {
         .icon-dd{
             width:10px;
             height:10px;
+            display:inline-block;    
+        }
+        .icon-close{
+            width:10px;
+            height:10px;
             display:inline-block;
+            
             
         }
     }
@@ -436,6 +452,9 @@ form {
             line-height: 1.42857;
             padding: 3px 20px;
             white-space: nowrap;
+                 input[type="checkbox"]{
+                     margin-right: 10px;
+                 }
         }
         }
     }

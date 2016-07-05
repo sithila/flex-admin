@@ -1,0 +1,33 @@
+.accordion-panel{
+    background: $pure-white;
+    border-radius: 0px;
+    border-radius: 0px;
+    text-align: left;
+    width: 100%;
+    margin-bottom: 5px;
+    .accordion-headding{
+        border-bottom: 1px solid $light-white;
+        border-radius: 0 ;
+        padding: 10px 30px 10px 15px;
+        color: $dark-ash-1;
+        display: table;
+        position: relative;
+        a{
+            padding-right: 30px;
+            width: 100%;
+            display: block;
+        }
+        .expand{
+            position:relative;
+            display: table-cell;
+            vertical-align: middle;
+            right: 0px;
+        }
+        }
+    .accordion-body{
+        padding: 15px;
+        background: $pure-white;
+        border-radius: 0;
+        display:none;
+    }
+}

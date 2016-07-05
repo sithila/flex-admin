@@ -11401,6 +11401,16 @@ form {
 .dropdown {
   position: relative; }
   /* line 371, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/components/_form.scss */
+  .dropdown .sel-item {
+    padding: 5px;
+    margin-right: 10px;
+    display: inline-block; }
+    /* line 375, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/components/_form.scss */
+    .dropdown .sel-item .icon-close {
+      display: inline-block;
+      margin-left: 10px;
+      color: #D75328; }
+  /* line 381, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/components/_form.scss */
   .dropdown .btn {
     background-color: #e6e6e6;
     border-color: #adadad;
@@ -11419,18 +11429,23 @@ form {
     text-align: center;
     vertical-align: middle;
     white-space: nowrap; }
-    /* line 389, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/components/_form.scss */
+    /* line 399, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/components/_form.scss */
     .dropdown .btn.cleardd {
       padding: 0px;
       background-color: #ffffff;
       border-color: #ffffff;
       font-size: 13px; }
-    /* line 396, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/components/_form.scss */
+    /* line 406, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/components/_form.scss */
     .dropdown .btn .icon-dd {
       width: 10px;
       height: 10px;
       display: inline-block; }
-  /* line 403, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/components/_form.scss */
+    /* line 411, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/components/_form.scss */
+    .dropdown .btn .icon-close {
+      width: 10px;
+      height: 10px;
+      display: inline-block; }
+  /* line 419, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/components/_form.scss */
   .dropdown .dropdown-menu {
     background-clip: padding-box;
     background-color: #fff;
@@ -11449,17 +11464,17 @@ form {
     text-align: left;
     top: 100%;
     z-index: 1000; }
-    /* line 421, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/components/_form.scss */
+    /* line 437, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/components/_form.scss */
     .dropdown .dropdown-menu.left {
       right: 0;
       left: auto; }
-    /* line 425, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/components/_form.scss */
+    /* line 441, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/components/_form.scss */
     .dropdown .dropdown-menu.show {
       display: block; }
-    /* line 428, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/components/_form.scss */
+    /* line 444, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/components/_form.scss */
     .dropdown .dropdown-menu li {
       float: none !important; }
-      /* line 431, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/components/_form.scss */
+      /* line 447, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/components/_form.scss */
       .dropdown .dropdown-menu li a {
         clear: both;
         color: #333;
@@ -11468,8 +11483,11 @@ form {
         line-height: 1.42857;
         padding: 3px 20px;
         white-space: nowrap; }
+        /* line 455, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/components/_form.scss */
+        .dropdown .dropdown-menu li a input[type="checkbox"] {
+          margin-right: 10px; }
 
-/* line 445, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/components/_form.scss */
+/* line 464, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/components/_form.scss */
 .ui-datepicker {
   display: none;
   padding: 10px 12px;
@@ -11479,11 +11497,11 @@ form {
   text-align: center;
   color: #666; }
 
-/* line 454, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/components/_form.scss */
+/* line 473, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/components/_form.scss */
 .ui-datepicker a {
   color: #404040; }
 
-/* line 457, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/components/_form.scss */
+/* line 476, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/components/_form.scss */
 .ui-datepicker-header {
   position: relative;
   margin: -10px -12px 10px;
@@ -11492,7 +11510,7 @@ form {
   font-size: 15px;
   line-height: 27px; }
 
-/* line 466, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/components/_form.scss */
+/* line 485, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/components/_form.scss */
 .ui-datepicker-prev,
 .ui-datepicker-next {
   position: absolute;
@@ -11505,25 +11523,25 @@ form {
   text-decoration: none;
   cursor: pointer; }
 
-/* line 477, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/components/_form.scss */
+/* line 496, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/components/_form.scss */
 .ui-datepicker-prev {
   left: 0; }
 
-/* line 480, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/components/_form.scss */
+/* line 499, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/components/_form.scss */
 .ui-datepicker-next {
   right: 0; }
 
-/* line 483, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/components/_form.scss */
+/* line 502, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/components/_form.scss */
 .ui-datepicker-calendar {
   border-collapse: collapse;
   font-size: 13px;
   line-height: 27px; }
 
-/* line 488, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/components/_form.scss */
+/* line 507, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/components/_form.scss */
 .ui-datepicker-calendar th {
   color: #999; }
 
-/* line 492, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/components/_form.scss */
+/* line 511, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/components/_form.scss */
 .ui-datepicker-calendar a,
 .ui-datepicker-calendar span {
   display: block;
@@ -11532,34 +11550,34 @@ form {
   text-decoration: none;
   color: #404040; }
 
-/* line 499, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/components/_form.scss */
+/* line 518, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/components/_form.scss */
 .ui-datepicker-calendar a:hover {
   background: rgba(0, 0, 0, 0.05); }
 
-/* line 502, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/components/_form.scss */
+/* line 521, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/components/_form.scss */
 .ui-datepicker-calendar span {
   color: #bfbfbf; }
 
-/* line 505, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/components/_form.scss */
+/* line 524, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/components/_form.scss */
 .ui-datepicker-today a {
   font-weight: 700; }
 
-/* line 508, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/components/_form.scss */
+/* line 527, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/components/_form.scss */
 .ui-datepicker-calendar .ui-state-active {
   background: rgba(0, 0, 0, 0.05);
   cursor: default; }
 
-/* line 512, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/components/_form.scss */
+/* line 531, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/components/_form.scss */
 .ui-datepicker-inline {
   border: 2px solid #e5e5e5;
   background: #fff;
   box-shadow: none; }
 
-/* line 517, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/components/_form.scss */
+/* line 536, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/components/_form.scss */
 .ui-datepicker-inline .ui-datepicker-header {
   line-height: 47px; }
 
-/* line 520, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/components/_form.scss */
+/* line 539, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/components/_form.scss */
 .ui-datepicker-inline .ui-datepicker-calendar {
   width: 100%; }
 
@@ -12495,33 +12513,70 @@ form {
     .gallery-dialog-wrapper .content-wrapper discription {
       font-size: 1em; }
 
-/* line 2, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/themes/_theme1.scss */
+/* line 1, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/components/_accordion.scss */
+.accordion-panel {
+  background: #ffffff;
+  border-radius: 0px;
+  border-radius: 0px;
+  text-align: left;
+  width: 100%;
+  margin-bottom: 5px; }
+  /* line 8, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/components/_accordion.scss */
+  .accordion-panel .accordion-headding {
+    border-bottom: 1px solid #e5e5e5;
+    border-radius: 0;
+    padding: 10px 30px 10px 15px;
+    color: #657181;
+    display: table;
+    position: relative; }
+    /* line 15, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/components/_accordion.scss */
+    .accordion-panel .accordion-headding a {
+      padding-right: 30px;
+      width: 100%;
+      display: block; }
+    /* line 20, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/components/_accordion.scss */
+    .accordion-panel .accordion-headding .expand {
+      position: relative;
+      display: table-cell;
+      vertical-align: middle;
+      right: 0px; }
+  /* line 27, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/components/_accordion.scss */
+  .accordion-panel .accordion-body {
+    padding: 15px;
+    background: #ffffff;
+    border-radius: 0;
+    display: none; }
+
+/* line 2, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/themes/_theme-dark.scss */
 .navigate-section .primary-nav {
-  background-color: #43A4E2;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#43A4E2), to(#265EAE));
-  background-image: -webkit-linear-gradient(top, #43A4E2, #265EAE);
-  background-image: -moz-linear-gradient(top, #43A4E2, #265EAE);
-  background-image: -ms-linear-gradient(top, #43A4E2, #265EAE);
-  background-image: -o-linear-gradient(top, #43A4E2, #265EAE);
-  background-image: linear-gradient(top, #43A4E2, #265EAE);
-  filter: progid:DXImageTransform.Microsoft.gradient(start-colourStr='#43A4E2', end-colourStr='#265EAE');
+  background-color: #262931;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#262931), to(#262931));
+  background-image: -webkit-linear-gradient(top, #262931, #262931);
+  background-image: -moz-linear-gradient(top, #262931, #262931);
+  background-image: -ms-linear-gradient(top, #262931, #262931);
+  background-image: -o-linear-gradient(top, #262931, #262931);
+  background-image: linear-gradient(top, #262931, #262931);
+  filter: progid:DXImageTransform.Microsoft.gradient(start-colourStr='#262931', end-colourStr='#262931');
   position: fixed;
   width: 250px;
   z-index: 1;
   height: 100%;
   visibility: visible; }
+  /* line 11, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/themes/_theme-dark.scss */
+  .navigate-section .primary-nav ul li a {
+    color: #646669; }
 
 @media (max-width: 760px) {
-  /* line 11, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/themes/_theme1.scss */
+  /* line 18, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/themes/_theme-dark.scss */
   .navigate-section .primary-nav {
     visibility: hidden; } }
 
-/* line 17, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/themes/_theme1.scss */
+/* line 24, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/themes/_theme-dark.scss */
 .page-container {
   margin: 0 0 0 250px; }
 
 @media (max-width: 760px) {
-  /* line 21, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/themes/_theme1.scss */
+  /* line 28, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/themes/_theme-dark.scss */
   .page-container {
     margin: 0 0 0 0px; } }
 
