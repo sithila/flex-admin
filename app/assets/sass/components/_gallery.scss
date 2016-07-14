@@ -7,6 +7,10 @@
         width: 300px;
         border: 1px solid $light-white;
         @include transition(all, 2s, linear);
+        @media (max-width: 40em) {
+            position: static;
+            width: auto;
+        }
         img{
             width: 100%;
         }
