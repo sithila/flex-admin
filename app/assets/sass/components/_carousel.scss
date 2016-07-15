@@ -89,7 +89,7 @@ ul.triggers {
     top: 380px; 
     color:#fff; 
     cursor:pointer;
-    &.prev,&.next{
+    &.cprev,&.cnext{
         position:absolute; 
         z-index: 99999;
         background-color:rgba(0, 0, 0, 0.6);
@@ -98,10 +98,10 @@ ul.triggers {
         font-size: 24px;
         padding: 25px;   
     }
-    &.prev { 
+    &.cprev { 
         left: 0px;
     }
-    &.next { 
+    &.cnext { 
         right: 0px; 
     }
 }

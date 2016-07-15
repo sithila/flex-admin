@@ -48,13 +48,13 @@ triggers.click(function() {
         resetTiming();
     }
 });
-$('.next').click(function() {
+$('.cnext').click(function() {
     target = $('ul.triggers li.selected').index();
     target === lastElem ? target = 0 : target = target+1;
     sliderResponse(target);
     resetTiming();
 });
-$('.prev').click(function() {
+$('.cprev').click(function() {
     target = $('ul.triggers li.selected').index();
     lastElem = triggers.length-1;
     target === 0 ? target = lastElem : target = target-1;

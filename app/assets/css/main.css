@@ -9790,11 +9790,15 @@ form {
     top: 40%;
     font-size: 2.5em;
     line-height: 44px;
-    cursor: pointer; }
+    cursor: pointer;
+    padding: 25px 20px; }
     .gallery-dialog-wrapper .slide.next {
       right: 310px; }
     .gallery-dialog-wrapper .slide.prev {
       left: 10px; }
+    .gallery-dialog-wrapper .slide i {
+      display: block;
+      margin-top: -17px; }
   .gallery-dialog-wrapper .wrapper {
     width: 100%;
     background: rgba(0, 0, 0, 0.5);
@@ -9922,7 +9926,7 @@ ul.triggers {
   top: 380px;
   color: #fff;
   cursor: pointer; }
-  .control.prev, .control.next {
+  .control.cprev, .control.cnext {
     position: absolute;
     z-index: 99999;
     background-color: rgba(0, 0, 0, 0.6);
@@ -9930,9 +9934,9 @@ ul.triggers {
     margin-top: -25px;
     font-size: 24px;
     padding: 25px; }
-  .control.prev {
+  .control.cprev {
     left: 0px; }
-  .control.next {
+  .control.cnext {
     right: 0px; }
 
 .navigate-section .primary-nav {

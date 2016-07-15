@@ -9790,11 +9790,15 @@ form {
     top: 40%;
     font-size: 2.5em;
     line-height: 44px;
-    cursor: pointer; }
+    cursor: pointer;
+    padding: 25px 20px; }
     .gallery-dialog-wrapper .slide.next {
       right: 310px; }
     .gallery-dialog-wrapper .slide.prev {
       left: 10px; }
+    .gallery-dialog-wrapper .slide i {
+      display: block;
+      margin-top: -17px; }
   .gallery-dialog-wrapper .wrapper {
     width: 100%;
     background: rgba(0, 0, 0, 0.5);
@@ -9863,6 +9867,25 @@ form {
     @media (max-width: 40em) {
       .app-carousel .carousel-wraper {
         height: auto; } }
+    .app-carousel .carousel-wraper .carousel-item {
+      display: table-cell;
+      height: 300px;
+      min-height: 300px;
+      overflow: hidden;
+      vertical-align: middle; }
+      .app-carousel .carousel-wraper .carousel-item.content {
+        padding: 5em; }
+      .app-carousel .carousel-wraper .carousel-item .thumb {
+        width: 100%;
+        height: 200px;
+        padding: 10px;
+        background: #ffffff;
+        background-size: cover; }
+        .app-carousel .carousel-wraper .carousel-item .thumb img {
+          width: 100%; }
+      @media (max-width: 40em) {
+        .app-carousel .carousel-wraper .carousel-item {
+          height: auto; } }
   .app-carousel:after {
     content: "";
     display: block;
@@ -9872,21 +9895,8 @@ ul.slides {
   position: relative;
   top: 0px;
   left: 0px; }
-
-ul.slides li {
-  float: left; }
-
-.carousel-item {
-  display: table-cell;
-  height: 300px;
-  min-height: 300px;
-  overflow: hidden;
-  vertical-align: middle; }
-  .carousel-item.content {
-    padding: 5em; }
-  @media (max-width: 40em) {
-    .carousel-item {
-      height: auto; } }
+  ul.slides li {
+    float: left; }
 
 ul.triggers {
   position: absolute;
@@ -9896,43 +9906,38 @@ ul.triggers {
   z-index: 99999;
   width: 200px;
   margin: 0px auto; }
-
-ul.triggers li {
-  float: left;
-  margin: 0 5px;
-  cursor: pointer;
-  background-color: #ccc;
-  color: #000;
-  width: 10px;
-  height: 10px;
-  text-indent: 100px;
-  border-radius: 5px;
-  overflow: hidden; }
-
-ul.triggers li.selected {
-  background-color: red;
-  color: #000; }
+  ul.triggers li {
+    float: left;
+    margin: 0 5px;
+    cursor: pointer;
+    background-color: #ccc;
+    color: #000;
+    width: 10px;
+    height: 10px;
+    text-indent: 100px;
+    border-radius: 5px;
+    overflow: hidden; }
+    ul.triggers li.selected {
+      background-color: red;
+      color: #000; }
 
 .control {
   position: absolute;
   top: 380px;
   color: #fff;
   cursor: pointer; }
-
-.prev, .next {
-  position: absolute;
-  z-index: 99999;
-  background-color: rgba(0, 0, 0, 0.6);
-  top: 50%;
-  margin-top: -25px;
-  font-size: 24px;
-  padding: 25px; }
-
-.prev {
-  left: 0px; }
-
-.next {
-  right: 0px; }
+  .control.cprev, .control.cnext {
+    position: absolute;
+    z-index: 99999;
+    background-color: rgba(0, 0, 0, 0.6);
+    top: 50%;
+    margin-top: -25px;
+    font-size: 24px;
+    padding: 25px; }
+  .control.cprev {
+    left: 0px; }
+  .control.cnext {
+    right: 0px; }
 
 .navigate-section .primary-nav {
   background-color: #43A4E2;

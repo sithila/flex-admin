@@ -12484,14 +12484,19 @@ form {
     top: 40%;
     font-size: 2.5em;
     line-height: 44px;
-    cursor: pointer; }
-    /* line 93, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/components/_gallery.scss */
+    cursor: pointer;
+    padding: 25px 20px; }
+    /* line 94, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/components/_gallery.scss */
     .gallery-dialog-wrapper .slide.next {
       right: 310px; }
-    /* line 97, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/components/_gallery.scss */
+    /* line 98, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/components/_gallery.scss */
     .gallery-dialog-wrapper .slide.prev {
       left: 10px; }
-  /* line 103, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/components/_gallery.scss */
+    /* line 102, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/components/_gallery.scss */
+    .gallery-dialog-wrapper .slide i {
+      display: block;
+      margin-top: -17px; }
+  /* line 108, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/components/_gallery.scss */
   .gallery-dialog-wrapper .wrapper {
     width: 100%;
     background: rgba(0, 0, 0, 0.5);
@@ -12499,10 +12504,10 @@ form {
     position: relative;
     height: 100%;
     text-align: center; }
-    /* line 111, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/components/_gallery.scss */
+    /* line 116, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/components/_gallery.scss */
     .gallery-dialog-wrapper .wrapper img {
       width: 100%; }
-  /* line 115, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/components/_gallery.scss */
+  /* line 120, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/components/_gallery.scss */
   .gallery-dialog-wrapper .content-wrapper {
     width: 300px;
     background: #ffffff;
@@ -12511,10 +12516,10 @@ form {
     height: 100%;
     padding: 15px;
     text-align: left; }
-    /* line 124, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/components/_gallery.scss */
+    /* line 129, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/components/_gallery.scss */
     .gallery-dialog-wrapper .content-wrapper .title {
       font-size: 2em; }
-    /* line 127, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/components/_gallery.scss */
+    /* line 132, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/components/_gallery.scss */
     .gallery-dialog-wrapper .content-wrapper discription {
       font-size: 1em; }
 
@@ -12645,7 +12650,7 @@ ul.triggers {
   color: #fff;
   cursor: pointer; }
   /* line 92, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/components/_carousel.scss */
-  .control.prev, .control.next {
+  .control.cprev, .control.cnext {
     position: absolute;
     z-index: 99999;
     background-color: rgba(0, 0, 0, 0.6);
@@ -12654,10 +12659,10 @@ ul.triggers {
     font-size: 24px;
     padding: 25px; }
   /* line 101, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/components/_carousel.scss */
-  .control.prev {
+  .control.cprev {
     left: 0px; }
   /* line 104, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/components/_carousel.scss */
-  .control.next {
+  .control.cnext {
     right: 0px; }
 
 /* line 2, /Applications/MAMP/htdocs/flex-admin/app/assets/sass/themes/_theme1.scss */

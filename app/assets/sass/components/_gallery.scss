@@ -90,6 +90,7 @@
         font-size: 2.5em;
         line-height: 44px;
         cursor: pointer;
+        padding: 25px 20px;
         &.next{
             right: 310px;
             
@@ -97,6 +98,10 @@
         &.prev{
             left: 10px;
             
+        }
+        i{
+            display: block;
+            margin-top: -17px;
         }
     }
     
