@@ -797,3 +797,74 @@
                
     </div>
 </div>
+
+
+<div class="row">
+    <div class="column col-75">
+        <div class="widget-box">
+            <div class="headding">Wizards</div>
+            <div class="body">
+                
+          <div wizard-directive> 
+              
+<ul class="nav-step">
+    <li class="active">1st</li>
+    <li>2nd</li>
+    <li>3rd</li>
+    <li>3rd</li>
+  </ul>
+  <div style="clear:both"></div>
+  
+  <div class="wizard-wrapper">
+    <div class="current">
+      <label class="step-title">1st</label>
+      <form class="bordered" action="ajax_respond.php" method="post">
+                    <header>General Forms</header>
+
+                    <fieldset>
+                        <section>
+                            <label class="label">Text input</label>
+                            <label class="input">
+                                <input type="text" name="name" ng-model="formData.name">
+                            </label>
+                        </section>
+                        <section>
+                            <label class="label">Text input</label>
+                                <label class="input">
+                                    <i class="icon-append icon-lock-rounded-open4"></i>
+                                    <input type="text" name="address" ng-model="formData.address">
+                                </label>
+                        </section>
+                        <section>
+                                <button class="round-button-medium-green" ng-click='formSubmit($event)'  type="submit">Submit</button>
+                        </section>
+                    </fieldset>
+                </form>
+    </div>
+    <div>
+      <label>2nd</label>
+      <input type="text" />
+    </div>
+    <div>
+      <label>3rd</label>
+      <input type="text" />
+    </div>
+    <div>
+      <label>4th</label>
+      <input type="text" />
+    </div>
+  </div>
+<div style="clear:both"></div>
+<ul class="navigate">
+    <li><input id="prev" class="round-button-medium-blue" type="button" value="<<" /></li>
+    <li><input id="next" class="round-button-medium-blue" type="button" value=">>" /></li>
+  </ul>              
+
+  
+                
+                </div>      
+                
+            </div>
+        </div>
+    </div>
+</div>

@@ -7,11 +7,14 @@
 <link  href="assets/css/normalize.min.css" type="text/css" rel="stylesheet"/>
 <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="assets/css/font-awesome.min.css">    
-<link rel="stylesheet" href="assets/css/main.css"/>
+<!--<link rel="stylesheet" href="assets/css/main.css"/>-->
 <script src="assets/js/vender/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 </head>
 <body data-ng-app="app" class="fadein-section">
-   
+    <div id="loader"></div>
+    <div id="loader-wrapper">
+    </div>
+    <div class="anim-wrapper">
     <nav class="navigate-section">
         <div class="brand-nav">
             <div href="" class="brand-logo"><a href="#/">Logo</a></div>
@@ -69,12 +72,14 @@
                 <li><a href="#/grids" class=""><span class="icon-small primary-nav-icon icon-grid3"> </span>Grids</a></li>
                 <li><a href="#/content" class=""><span class="icon-small primary-nav-icon icon-clipboard2"></span>Content</a></li>
                 <li><a href="#/component" class=""><span class="icon-small primary-nav-icon icon-profile3"></span>Component</a></li>
+                <li><a href="#/transition" class=""><span class="icon-small primary-nav-icon icon-profile3"></span>Transition</a></li>
                 <li><a href="#/form" class=""><span class="icon-small primary-nav-icon icon-paragraph-left"></span>Form</a></li>
                 <li><a href="#search" class=""><span class="icon-small primary-nav-icon icon-search5"></span>Search</a></li>
                 <li><a href="#/chart" class=""><span class="icon-small primary-nav-icon icon-chart"></span>Chart</a></li>
                 <li><a href="#/layouts" class=""><span class="icon-small primary-nav-icon icon-chart"></span>Layouts</a></li>
                 <li><a href="" class=""><span class="icon-small primary-nav-icon icon-cog3"></span>Settings</a></li>
             </ul>
+        </div>
     </nav>
         
     <div class="page-container">
@@ -84,7 +89,7 @@
             <p>Copyright © 2016 Sithila Sandaruwan. All Rights Reserved.</p>
         </footer>
     </div>
-    
+    </div>
      
 <script src="assets/js/angular/angular.min.js"></script>
 <script src="assets/js/angular/angular-route.min.js"></script> 
@@ -109,19 +114,20 @@
 <script src="assets/js/directives/dropdown.js"></script> 
 <script src="assets/js/directives/gallery.js"></script>
 <script src="assets/js/directives/carousel.js"></script>
+<script src="assets/js/directives/wizards.js"></script>
 <script src="assets/js/directives/form_submit.js"></script> 
         
     
 <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>-->
 <script>window.jQuery || document.write('<script src="assets/js/jquery/jquery-1.11.2.min.js"><\/script>')</script>
-        <script src="assets/js/jquery/jquery-ui.min.js"></script> 
+<script src="assets/js/jquery/jquery-ui.min.js"></script> 
 <script src="assets/js/flot/jquery.flot.min.js"></script>
-    <script src="assets/js/flot/jquery.flot.pie.min.js"></script>
-    <script src="assets/js/flot/jquery.flot.categories.min.js"></script>
-    <script src="assets/js/flot/jquery.flot.grow.js"></script>    
-    <script src="assets/js/flot/jquery.flot.tooltip.min.js"></script>    
-    <script src="assets/js/flot/jquery.flot.orderBars.js"></script>
-    <script src="assets/js/flot/jquery.flot.stack.min.js"></script> 
+<script src="assets/js/flot/jquery.flot.pie.min.js"></script>
+<script src="assets/js/flot/jquery.flot.categories.min.js"></script>
+<script src="assets/js/flot/jquery.flot.grow.js"></script>    
+<script src="assets/js/flot/jquery.flot.tooltip.min.js"></script>    
+<script src="assets/js/flot/jquery.flot.orderBars.js"></script>
+<script src="assets/js/flot/jquery.flot.stack.min.js"></script> 
 <script src="assets/js/main.js"></script> 
         
      

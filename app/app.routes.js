@@ -22,6 +22,10 @@ function config ($routeProvider) {
             templateUrl: 'pages/component/component.tpl.html',
             controller: 'componentController as component'
         })
+        .when('/transition', {
+            templateUrl: 'pages/transition/transition.tpl.html',
+            controller: 'transitionController as transition'
+        })
         .when('/form', {
             templateUrl: 'pages/form/form.tpl.html',
             controller: 'formController as form'

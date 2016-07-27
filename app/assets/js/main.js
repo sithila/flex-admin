@@ -5,6 +5,10 @@ $(window).load(function() {
 $(document).ready(function($){
     $('body').addClass('fadein');
     //Datepicker.initDatepicker();
+    setTimeout(function(){
+		$('body').addClass('loaded');
+	}, 3000);
+    
     dropdown();
 });
 

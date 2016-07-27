@@ -1,0 +1,118 @@
+
+$number-of-steps:  4;
+
+$line-width:       2px;
+$bullet-size:      4em;
+
+$background-color: black;
+$foreground-color: #555;
+
+
+
+
+ul.nav-step {
+  position: relative;
+  overflow: hidden;
+  counter-reset: wizard;  
+}
+
+ul.nav-step li {
+  position: relative;
+  float: left;
+  width: 100% / $number-of-steps;
+  text-align: center;
+  color: $link-blue;
+}
+
+ul.nav-step .active ~ li {
+  color: $foreground-color;
+}
+
+ul.nav-step li:before {
+  counter-increment: wizard;
+  content: counter(wizard);
+  display: block;
+  color: $pure-white;
+  background-color: $link-blue;
+  border: $line-width solid $link-blue;
+  text-align: center;
+  width: $bullet-size;
+  height: $bullet-size;
+  line-height: $bullet-size;
+  border-radius: $bullet-size;
+  position: relative;
+  left: 50%;
+  margin-bottom: $bullet-size / 2;
+  margin-left: $bullet-size * -0.5;
+  z-index: 1;
+}
+
+ul.nav-step .active ~ li:before {
+    background-color: $light-white;
+    color: $text-ash;
+    border-color: $text-ash;
+}
+
+ul.nav-step li + li {
+  &:after{
+    content: "";
+    display: block;
+    width: 100%;
+    background-color: $link-blue;
+    height: $line-width;
+    position: absolute;
+    left: -50%;
+    top: $bullet-size / 2;
+    z-index: 0;
+  }
+}
+
+ul.nav-step .active ~ li:after {
+    background-color: $foreground-color;
+}
+
+
+.nav-step { 
+  list-style-type: none;
+  text-align: center;
+}
+
+.navigate{
+    list-style-type: none;
+    text-align: center;
+}
+.navigate li{
+    display: inline-block;
+}
+
+
+.wizard-wrapper div {
+  width:100%;
+    margin: 10px 0px;
+}
+.step-title{
+    display: block;
+  width:100%;
+    padding: 10px;
+    text-align: center;
+}
+
+.current {
+  z-index:100;
+}
+
+.wizard-wrapper {
+  width: 100%;
+  height:auto;
+  min-height: 200px;
+  display:inline-block;
+    
+}
+
+#prev {
+  display:inline-block;
+}
+
+#next {
+  display: inline-block;
+}
