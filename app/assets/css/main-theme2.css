@@ -6874,7 +6874,10 @@ body {
   background-color: #FAFAFA;
   color: #555555;
   font-family: "Open Sans", sans-serif;
-  font-size: 1em; }
+  font-size: 1em;
+  overflow: hidden; }
+  body.loaded {
+    overflow: auto; }
 
 .fadein-body {
   text-align: center;

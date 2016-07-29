@@ -3,6 +3,10 @@ body{
     color:$text-ash;
     font-family: $site-font;
     font-size: 1em;
+    overflow: hidden;
+    &.loaded{
+        overflow: auto;
+    }
 }
 .fadein-body {
     
