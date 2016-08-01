@@ -6904,8 +6904,8 @@ body {
     width: 30px;
     height: 30px;
     display: inline-block;
-    position: absolute;
-    top: 10px;
+    position: relative;
+    top: 0px;
     right: 10px;
     display: none;
     z-index: 5; }
@@ -6943,8 +6943,19 @@ body {
       height: 50px; }
       @media (max-width: 40em) {
         .navigate-section .brand-nav .brand-logo {
-          width: 100%; } }
+          width: 100px; } }
       .navigate-section .brand-nav .brand-logo a {
+        display: table-row;
+        display: table-cell;
+        vertical-align: middle; }
+    .navigate-section .brand-nav .toggle-menu {
+      display: table;
+      float: left;
+      height: 50px; }
+      @media (max-width: 40em) {
+        .navigate-section .brand-nav .toggle-menu {
+          width: 50px; } }
+      .navigate-section .brand-nav .toggle-menu a {
         display: table-row;
         display: table-cell;
         vertical-align: middle; }
@@ -9838,6 +9849,10 @@ form {
       .gallery-items .gallery-item {
         position: static;
         width: auto; } }
+    @media (max-width: 769px) {
+      .gallery-items .gallery-item {
+        position: static;
+        width: auto; } }
     .gallery-items .gallery-item img {
       width: 100%; }
     .gallery-items .gallery-item .details {
@@ -10486,6 +10501,8 @@ ul.nav-step .active ~ li:after {
     /* IE 9 */
     transform: rotate(360deg);
     /* Firefox 16+, IE 10+, Opera */ } }
+.navigate-section .toggle-menu {
+  display: none !important; }
 .navigate-section .primary-nav {
   position: absolute;
   width: 100%;

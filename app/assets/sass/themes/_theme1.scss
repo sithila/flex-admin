@@ -6,19 +6,35 @@
         z-index: 1;
         height: 100%;
         visibility: visible;
+        left: 0;
+        transition: 0.5s;
+        @media (max-width: 40em) {
+            padding-top: 100px;
+            z-index: -1;
+        }
+        &.slide-up{
+            left: -250px;
+            transition: 0.5s;
+        }
     }
+    
     @media (max-width: 760px) {
         .primary-nav {
-            visibility: hidden;
+            //visibility: hidden;
             }
     }
 }
 
 .page-container {
-    margin: 0 0 0 250px;  
+    margin: 0 0 0 250px;
+    transition: 0.5s;
+    &.slide-up{
+        margin: 0 0 0 0px;
+        transition: 0.5s;
+    }
 }
 @media (max-width: 760px) {
         .page-container {
-            margin: 0 0 0 0px;  
+            //margin: 0 0 0 0px;  
         }
     }

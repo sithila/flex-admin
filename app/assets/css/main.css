@@ -6904,8 +6904,8 @@ body {
     width: 30px;
     height: 30px;
     display: inline-block;
-    position: absolute;
-    top: 10px;
+    position: relative;
+    top: 0px;
     right: 10px;
     display: none;
     z-index: 5; }
@@ -6943,8 +6943,19 @@ body {
       height: 50px; }
       @media (max-width: 40em) {
         .navigate-section .brand-nav .brand-logo {
-          width: 100%; } }
+          width: 100px; } }
       .navigate-section .brand-nav .brand-logo a {
+        display: table-row;
+        display: table-cell;
+        vertical-align: middle; }
+    .navigate-section .brand-nav .toggle-menu {
+      display: table;
+      float: left;
+      height: 50px; }
+      @media (max-width: 40em) {
+        .navigate-section .brand-nav .toggle-menu {
+          width: 50px; } }
+      .navigate-section .brand-nav .toggle-menu a {
         display: table-row;
         display: table-cell;
         vertical-align: middle; }
@@ -9838,6 +9849,10 @@ form {
       .gallery-items .gallery-item {
         position: static;
         width: auto; } }
+    @media (max-width: 769px) {
+      .gallery-items .gallery-item {
+        position: static;
+        width: auto; } }
     .gallery-items .gallery-item img {
       width: 100%; }
     .gallery-items .gallery-item .details {
@@ -10486,31 +10501,31 @@ ul.nav-step .active ~ li:after {
     /* IE 9 */
     transform: rotate(360deg);
     /* Firefox 16+, IE 10+, Opera */ } }
+.navigate-section .toggle-menu {
+  display: none !important; }
 .navigate-section .primary-nav {
-  background-color: #262931;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#262931), to(#262931));
-  background-image: -webkit-linear-gradient(top, #262931, #262931);
-  background-image: -moz-linear-gradient(top, #262931, #262931);
-  background-image: -ms-linear-gradient(top, #262931, #262931);
-  background-image: -o-linear-gradient(top, #262931, #262931);
-  background-image: linear-gradient(top, #262931, #262931);
-  filter: progid:DXImageTransform.Microsoft.gradient(start-colourStr='#262931', end-colourStr='#262931');
-  position: fixed;
-  width: 250px;
+  position: absolute;
+  width: 100%;
   z-index: 1;
-  height: 100%;
-  visibility: visible; }
-  .navigate-section .primary-nav ul li a {
-    color: #646669; }
-@media (max-width: 760px) {
-  .navigate-section .primary-nav {
-    visibility: hidden; } }
+  margin-top: -41px;
+  padding-left: 15px;
+  padding-right: 15px;
+  height: auto; }
+  .navigate-section .primary-nav ul {
+    background-color: #43A4E2;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#43A4E2), to(#265EAE));
+    background-image: -webkit-linear-gradient(top, #43A4E2, #265EAE);
+    background-image: -moz-linear-gradient(top, #43A4E2, #265EAE);
+    background-image: -ms-linear-gradient(top, #43A4E2, #265EAE);
+    background-image: -o-linear-gradient(top, #43A4E2, #265EAE);
+    background-image: linear-gradient(top, #43A4E2, #265EAE);
+    filter: progid:DXImageTransform.Microsoft.gradient(start-colourStr='#43A4E2', end-colourStr='#265EAE'); }
+    .navigate-section .primary-nav ul li {
+      display: inline-block; }
 
 .page-container {
-  margin: 0 0 0 250px; }
-
-@media (max-width: 760px) {
-  .page-container {
-    margin: 0 0 0 0px; } }
+  margin: 50px 15px 0 15px;
+  border: 1px solid #e5e5e5;
+  padding: 10px 15px; }
 
 /*# sourceMappingURL=main.css.map */

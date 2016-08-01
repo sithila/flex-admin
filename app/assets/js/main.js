@@ -215,29 +215,20 @@ Array.min = function(array) {
     return Math.min.apply(Math, array);
 };
 
+
+
 $('.mobile-togglemenu').click(function(e) {
     e.preventDefault();
-      toggleMainMenu();
+    $(this).toggleClass('leftmenu-displayed');
+    $('.page-container').toggleClass('slide-up');
+    $('.primary-nav').toggleClass('slide-up');  
    });
 
-function toggleMainMenu() {
-		  //alert(windowwidth);
-    //alert('togglemenu');
-    var menu = $('.primary-nav');
-         //var toggleWidth = null;
-    menu.toggleClass('visible');
-   /* if (menu.hasClass('visible')){
-        
-    }
-			  
-			else{
-				toggleWidth = "50px";	
-			}
-            
-		*/	
+var win = $(this); 
+if (win.width() <= 768) { $('.mobile-togglemenu').click(); }
 
-			 
-         
-        // menu.animate({width: toggleWidth}, 200);
-        // container.animate({marginLeft: toggleMargin}, 200);
-      }
+$(window).on('resize', function(){
+      var win = $(this); //this = window
+      
+      if (win.width() <= 768) { $('.mobile-togglemenu').click(); }
+});

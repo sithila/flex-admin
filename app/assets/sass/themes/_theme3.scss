@@ -1,4 +1,7 @@
 .navigate-section{
+    .toggle-menu{
+        display: none !important;
+    }
     .primary-nav{
         @include bg-gradient-t2b(#43A4E2, #265EAE);
         position:relative;
